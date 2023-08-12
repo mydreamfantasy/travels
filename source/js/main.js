@@ -1,11 +1,10 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from "./utils/ios-vh-fix";
+import { initModals } from "./modules/modals/init-modals";
+import { Form } from "./modules/form-validate/form";
 
 // ---------------------------------
 
-window.addEventListener('DOMContentLoaded', () => {
-
+window.addEventListener("DOMContentLoaded", () => {
   // Utils
   // ---------------------------------
 
@@ -14,9 +13,24 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  let navMain = document.querySelector(".header__nav");
+  let navToggle = document.querySelector(".header__nav__toggle");
+
+  navMain.classList.remove("header__nav--nojs");
+
+  navToggle.addEventListener("click", function () {
+    if (navMain.classList.contains("header__nav--closed")) {
+      navMain.classList.remove("header__nav--closed");
+      navMain.classList.add("header__nav--opened");
+    } else {
+      navMain.classList.add("header__nav--closed");
+      navMain.classList.remove("header__nav--opened");
+    }
+  });
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     initModals();
     const form = new Form();
     window.form = form;
