@@ -58,11 +58,168 @@
       </nav>
       <div class="header__phone-wrapper">
         <a class="header__phone" href="tel:+78007253232">8 800 725 32 32</a>
+
       </div>
     </header>
     <main>
-      <section class="banner">
-        <div class="container"></div>
+      <section class="swiper banner">
+        <ul class="banner__list swiper-wrapper" data-swiper>
+          <li class="banner__item swiper-slide">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/banner.png, img/banner@2x.png 2x" />
+              <source media="(min-width: 768px)"
+                srcset="img/banner/banner-1-tablet.png, img/banner/banner-1-tablet@2x.png 2x" />
+              <img class="banner__img" src="img/banner.png" width="320" height="568" alt="Горный пейзаж"
+                srcset="img/banner/banner-1-phone@2x.png 2x" />
+            </picture>
+
+            <div class="banner__wrapper container">
+              <h2>Захватывающие вершины Кавказа</h2>
+              <p>В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход на вершину
+                горы Чегет.</p>
+              <a href="#" class="banner__link btn">Смотреть тур</a>
+              <ul class="banner__block">
+                <li class="banner__info">
+                  <svg width="11" height="11" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite/sprite.svg#moon"></use>
+                  </svg>
+                  <span>
+                    6 дней/5 ночей
+                  </span>
+                </li>
+
+                <li class="banner__info">
+                  <svg width="11" height="11" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite/sprite.svg#graph"></use>
+                  </svg>
+                  <span>
+                    Высокая сложность
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="banner__video" data-video>
+              <div class="banner__video-img">
+                <picture>
+                  <img src="img/banner/preview-1.png" alt="Человек в горах" srcset="img/banner/preview-1@2x.png 2x"
+                    height="482" width="317" />
+                </picture>
+                <a class="banner__video-btn" href="https://www.youtube.com/watch?v=9TZXsZItgdw" data-video-btn>
+                  <span class="visually-hidden">Воспроизвести видео.</span>
+                </a>
+              </div>
+              <div class="banner__video-player" id="player" data-video-player></div>
+            </div>
+          </li>
+          <li class="banner__item swiper-slide">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/banner/banner-2.png, img/banner/banner-2@2x.png 2x" />
+              <source media="(min-width: 768px)"
+                srcset="img/banner/banner-2-tablet.png, img/banner/banner-2-tablet@2x.png 2x" />
+              <img class="banner__img" src="img/banner/banner-2-phone.png" width="320" height="568" alt="Горный пейзаж"
+                srcset="img/banner/banner-2-phone@2x.png 2x" />
+            </picture>
+
+            <div class="banner__wrapper container">
+              <h2>Невероятная природа Камчатки</h2>
+              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
+                уголков дикой природы в мире.</p>
+              <a href="#" class="banner__link btn">Смотреть тур</a>
+              <ul class="banner__block">
+                <li class="banner__info">
+                  <svg width="11" height="11" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite/sprite.svg#moon"></use>
+                  </svg>
+                  <span>
+                    9 дней/10 ночей
+                  </span>
+                </li>
+
+                <li class="banner__info">
+                  <svg width="11" height="11" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite/sprite.svg#graph"></use>
+                  </svg>
+                  <span>
+                    Средняя сложность
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="banner__video banner__video--kamchatka" data-video>
+              <div class="banner__video-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/banner/preview-2.png, img/banner/preview-2@2x.png 2x" />
+                  <source media="(min-width: 768px)"
+                    srcset="img/banner/preview-2-tablet.png, img/banner/preview-2-tablet@2x.png 2x" />
+                  <img src="img/banner/preview-2.png" alt="Человек в горах" srcset="img/banner/preview-2@2x.png 2x"
+                    height="459" width="410" />
+                </picture>
+                <!-- <a class="banner__video-btn" href="https://www.youtube.com/watch?v=9TZXsZItgdw" data-video-btn>
+                  <span class="visually-hidden">Воспроизвести видео.</span>
+                </a> -->
+              </div>
+              <!-- <div class="banner__video-player" id="player" data-video-player></div> -->
+            </div>
+          </li>
+          <li class="banner__item swiper-slide">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/banner/banner-3.png, img/banner/banner-3@2x.png 2x" />
+              <source media="(min-width: 768px)"
+                srcset="img/banner/banner-3-tablet.png, img/banner/banner-3-tablet@2x.png 2x" />
+              <img class="banner__img" src="img/banner/banner-3-phone.png" width="320" height="568" alt="Горный пейзаж"
+                srcset="img/banner/banner-3-phone@2x.png 2x" />
+            </picture>
+
+            <div class="banner__wrapper container">
+              <h2>Магические пейзажи Алтайского Края</h2>
+              <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух
+                ландшафтов Алтайских гор. </p>
+              <a href="#" class="banner__link btn">Смотреть тур</a>
+              <ul class="banner__block">
+                <li class="banner__info">
+                  <svg width="11" height="11" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite/sprite.svg#moon"></use>
+                  </svg>
+                  <span>
+                    8 дней/7 ночей
+                  </span>
+                </li>
+
+                <li class="banner__info">
+                  <svg width="11" height="11" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite/sprite.svg#graph"></use>
+                  </svg>
+                  <span>
+                    Легкая сложность
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="banner__video banner__video--altai" data-audio>
+              <div class="banner__video-img">
+                <picture>
+                  <img src="img/banner/preview-3.png" alt="Аудио" srcset="img/banner/preview-3@2x.png 2x" height="220"
+                    width="340" />
+                </picture>
+                <a class="banner__video-btn" href="https://music.yandex.ru/album/25474374/track/112912322"
+                  data-audio-btn>
+                  <span class="visually-hidden">Воспроизвести видео.</span>
+                </a>
+              </div>
+              <div class="banner__video-player" id="player" data-audio-player>
+                <iframe frameborder="0" style="border:none;width:340px;height:220px;" width="340" height="220"
+                  src="https://music.yandex.ru/iframe/#track/112912322/25474374">Слушайте <a
+                    href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
+                    фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="banner__pagination swiper-pagination"></div>
       </section>
     </main>
     <footer class="footer">

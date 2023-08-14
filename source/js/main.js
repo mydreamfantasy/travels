@@ -1,15 +1,18 @@
 import { iosVhFix } from "./utils/ios-vh-fix";
 import { initModals } from "./modules/modals/init-modals";
 import { Form } from "./modules/form-validate/form";
+import { getSwiper } from "./modules/swiper";
+import { initVideo, initAudio } from "./modules/video";
 
 // ---------------------------------
 
 window.addEventListener("DOMContentLoaded", () => {
   // Utils
   // ---------------------------------
-
+  initVideo();
+  initAudio();
   iosVhFix();
-
+  getSwiper();
   // Modules
   // ---------------------------------
 

@@ -1,2 +1,343 @@
 .banner {
+  @include vp-1199 {
+    padding-bottom: 218px;
+  }
+}
+
+.banner__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.banner__item {
+  &:nth-of-type(even) {
+    h2,
+    p {
+      text-shadow: 0 2px 5px $color-shadow;
+    }
+  }
+}
+
+.banner__img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 800px;
+  top: 0;
+  left: 0;
+  background-color: $color-neon-blue;
+
+  @include vp-1199 {
+    height: 1024px;
+  }
+
+  @include vp-767 {
+    height: 568px;
+  }
+}
+
+.banner__wrapper {
+  padding-top: 73px;
+  padding-bottom: 80px;
+
+  @include vp-1199 {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: 110px;
+    margin-bottom: 25px;
+    max-width: 925px;
+    font-size: 77px;
+    color: $color-default-white;
+    font-weight: 800;
+    line-height: 77px;
+    z-index: 5;
+
+    @include vp-1199 {
+      font-size: 56px;
+      margin: 0 auto;
+      margin-bottom: 13px;
+      margin-top: 102px;
+      text-align: center;
+      line-height: 56px;
+    }
+
+    @include vp-767 {
+      font-size: 30px;
+      line-height: 30px;
+      margin-top: 67px;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+    max-width: 460px;
+    font-size: 17px;
+    color: $color-default-white;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+
+    @include vp-1199 {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+
+    @include vp-767 {
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.banner__link {
+  display: inline-block;
+  background-color: $color-navi;
+  padding: 21px 54px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 150px;
+
+  @include vp-1199 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 21px 47px;
+    margin-bottom: 50px;
+  }
+  @include vp-767 {
+    padding: 19px 34px;
+    margin-bottom: 101px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    padding: 20px 53px;
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution;
+    color: $color-resolution;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: $color-resolution;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
+.banner__block {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.banner__info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 14px 19px 12px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $color-default-white;
+  }
+}
+
+.banner__video {
+  position: absolute;
+  top: 301px;
+  left: 58.2%;
+  width: 482px;
+  height: 317px;
+  z-index: 0;
+
+  &--kamchatka {
+    top: 203px;
+    left: 63.1%;
+    width: 410px;
+  }
+
+  &--altai {
+    top: 301px;
+    left: 68.1%;
+    width: 339px;
+
+    .banner__video-btn {
+      width: 47px;
+      height: 47px;
+      top: 156px;
+    }
+  }
+
+  @include vp-1199 {
+    position: relative;
+    width: 442px;
+    height: 300px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 118px;
+
+    img {
+      height: 301px;
+    }
+
+    &--kamchatka {
+      width: 443px;
+      top: -12px;
+
+      img {
+        height: 362px;
+      }
+    }
+
+    &--altai {
+      top: 19px;
+      width: 340px;
+
+      .banner__video-btn {
+      }
+    }
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.banner__video iframe {
+  width: 442px;
+  height: 300px;
+
+  @include vp-1199 {
+    width: 442px;
+    height: 300px;
+  }
+}
+
+.banner__video-img {
+  position: relative;
+
+  img {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+.banner__video-player {
+  display: none;
+}
+
+.banner__video-btn {
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 56px;
+  border: none;
+  background-color: inherit;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56' fill='none'%3E%3Ccircle cx='28' cy='28' r='27.5' fill='white' fill-opacity='0.2' stroke='white'/%3E%3Cpath d='M37 28L25 17V39L37 28Z' fill='white'/%3E%3C/svg%3E");
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-size: contain;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56' fill='none'%3E%3Ccircle cx='28' cy='28' r='27.5' stroke='%231C3374'/%3E%3Cpath d='M37 28L25 17V39L37 28Z' fill='white' stroke='black'/%3E%3C/svg%3E");
+  }
+
+  &:active {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56' fill='none'%3E%3Ccircle cx='28' cy='28' r='27.5' fill='%231C3374' stroke='%231C3374'/%3E%3Cpath d='M37 28L25 17V39L37 28Z' fill='white'/%3E%3C/svg%3E");
+  }
+
+  &:disabled {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56' fill='none'%3E%3Ccircle cx='28' cy='28' r='27.5' stroke='%230266C1' stroke-opacity='0.1'/%3E%3Cpath d='M37 28L25 17V39L37 28Z' fill='%230266C1' fill-opacity='0.1'/%3E%3C/svg%3E");
+  }
+}
+
+.banner__video--active .banner__video-player {
+  display: block;
+}
+
+.banner__video--active .banner__video-btn {
+  display: none;
+}
+
+.banner__video--active .banner__video-img {
+  display: none;
+
+  img {
+    display: none;
+  }
+}
+
+.banner__pagination {
+  position: absolute;
+  right: 117px;
+  bottom: 98px;
+  z-index: 1;
+  display: flex;
+  gap: 6px;
+
+  @include vp-1199 {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 45.6%;
+  }
+
+  @include vp-767 {
+    left: 41.2%;
+    gap: 4px;
+  }
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: $color-default-white;
 }
