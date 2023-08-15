@@ -27,31 +27,3 @@ export const initVideo = function () {
     });
   }
 };
-
-export const initAudio = function () {
-  const player = document.querySelector("[data-audio-player]");
-  const link = document.querySelector("[data-audio-btn]");
-  const boxVideo = document.querySelector("[data-audio]");
-
-  if (!link) {
-    return;
-  } else {
-    link.addEventListener("click", (evt) => {
-      evt.preventDefault();
-
-      if (boxVideo) {
-        boxVideo.classList.add("banner__video--active");
-
-        // // eslint-disable-next-line no-new, no-undef
-        // new YT.Player(player, {
-        //   videoId: "9TZXsZItgdw",
-        //   events: {
-        //     onReady: (e) => e.target.playVideo(),
-        //   },
-        //   video,
-        // });
-        evt.stopPropagation();
-      }
-    });
-  }
-};

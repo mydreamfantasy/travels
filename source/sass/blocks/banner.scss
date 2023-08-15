@@ -1,6 +1,10 @@
 .banner {
   @include vp-1199 {
-    padding-bottom: 218px;
+    padding-bottom: 91px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 42px;
   }
 }
 
@@ -185,12 +189,6 @@
     top: 301px;
     left: 68.1%;
     width: 339px;
-
-    .banner__video-btn {
-      width: 47px;
-      height: 47px;
-      top: 156px;
-    }
   }
 
   @include vp-1199 {
@@ -218,9 +216,6 @@
     &--altai {
       top: 19px;
       width: 340px;
-
-      .banner__video-btn {
-      }
     }
   }
 

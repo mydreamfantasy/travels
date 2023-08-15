@@ -1,0 +1,7 @@
+.main__first-banner {
+  background: url("../../img/clouds.png") right -15% no-repeat;
+
+  @include vp-1199 {
+    background: url("../../img/clouds-tablet.png") right -171% no-repeat;
+  }
+}
