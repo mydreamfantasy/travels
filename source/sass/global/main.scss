@@ -4,4 +4,8 @@
   @include vp-1199 {
     background: url("../../img/clouds-tablet.png") right -171% no-repeat;
   }
+
+  @include vp-767 {
+    background: url("../../img/clouds-phone.png") right 18% no-repeat;
+  }
 }

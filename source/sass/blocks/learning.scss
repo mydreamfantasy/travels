@@ -1,13 +1,16 @@
 .learning {
   padding-top: 124px;
   position: relative;
+  padding-bottom: 20px;
 
   @include vp-1199 {
     padding-top: 85px;
+    padding-bottom: 25px;
   }
 
   @include vp-767 {
     padding-top: 65px;
+    padding-bottom: 22px;
   }
 
   p {
@@ -16,7 +19,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    padding-bottom: 54px;
+    padding-bottom: 56px;
     max-width: 840px;
     letter-spacing: -0.3px;
 
@@ -81,7 +84,7 @@
   p {
     position: absolute;
     top: -15px;
-    left: 0;
+    left: auto;
     margin: 0;
     padding: 0;
     font-size: 55px;
@@ -176,6 +179,23 @@
   }
 }
 
+.learning__slider {
+  margin: 0 95px;
+  padding: 0 25px;
+  overflow: hidden;
+
+  @include vp-1199 {
+    margin: 0 20px;
+    padding: 0 25px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    padding: 0 15px;
+    padding-bottom: 30px;
+  }
+}
+
 .learning__list {
   margin: 0;
   padding: 0;
@@ -183,12 +203,17 @@
   width: 100%;
   height: 100%;
   max-width: 1600px;
-  margin-bottom: 49px;
-  padding-top: 49px;
+  margin-bottom: 40px;
+  padding-top: 41px;
   align-items: stretch;
 
   @include vp-1199 {
     padding-top: 32px;
+    margin-bottom: 34px;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
   }
 }
 
@@ -196,7 +221,7 @@
   padding: 20px 18px 20px 20px;
   border: 1px solid $color-default-white;
   background-color: $color-default-white;
-  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+  box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.1);
 
   @include vp-1199 {
     padding: 15px 11px 15px 15px;
@@ -204,6 +229,7 @@
 
   @include vp-767 {
     padding: 20px;
+    margin-top: 32px;
   }
 
   img {
