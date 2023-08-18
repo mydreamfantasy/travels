@@ -1,7 +1,14 @@
 import { iosVhFix } from "./utils/ios-vh-fix";
 import { initModals } from "./modules/modals/init-modals";
 import { Form } from "./modules/form-validate/form";
-import { getSwiper, getSwiperTours, getSwiperLearn } from "./modules/swiper";
+import {
+  getSwiper,
+  getSwiperTours,
+  getSwiperLearn,
+  getSwiperReviews,
+  getSwiperFeatures,
+  getSwiperGallery,
+} from "./modules/swiper";
 import { initVideo } from "./modules/video";
 
 // ---------------------------------
@@ -14,6 +21,9 @@ window.addEventListener("DOMContentLoaded", () => {
   getSwiper();
   getSwiperTours();
   getSwiperLearn();
+  getSwiperReviews();
+  getSwiperFeatures();
+  getSwiperGallery();
 
   // Modules
   // ---------------------------------

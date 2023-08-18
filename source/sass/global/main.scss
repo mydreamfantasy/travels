@@ -9,3 +9,19 @@
     background: url("../../img/clouds-phone.png") right 18% no-repeat;
   }
 }
+
+.main__second-banner {
+  background: url("../../img/clouds-little.png") right 15% no-repeat;
+
+  @include vp-1199 {
+    background: none;
+  }
+}
+
+.main__third-banner {
+  background: url("../../img/clouds-left.png") left 36% no-repeat;
+
+  @include vp-1199 {
+    background: none;
+  }
+}

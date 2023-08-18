@@ -5,12 +5,12 @@
 
   @include vp-1199 {
     padding-top: 85px;
-    padding-bottom: 25px;
+    padding-bottom: 9px;
   }
 
   @include vp-767 {
     padding-top: 65px;
-    padding-bottom: 22px;
+    padding-bottom: 5px;
   }
 
   p {
@@ -218,6 +218,7 @@
 }
 
 .learning__item {
+  min-height: 100%;
   padding: 20px 18px 20px 20px;
   border: 1px solid $color-default-white;
   background-color: $color-default-white;
@@ -228,6 +229,7 @@
   }
 
   @include vp-767 {
+    min-height: 100%;
     padding: 20px;
     margin-top: 32px;
   }
