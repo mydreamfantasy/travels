@@ -748,9 +748,9 @@
 
             <div class="about__text-wrap">
               <h3>История компании</h3>
-              <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения,
+              <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом - походы, поездки, восхождения,
                 нам это настолько
-                понравилось, что мы&nbsp;этим стали жить. <br>Спустя 5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали
+                понравилось, что мы этим стали жить. <br>Спустя 5&nbsp;лет, в&nbsp;2005 году мы основали
                 компанию, чтобы
                 показывать
                 людям удивительные места нашей страны.</p>
@@ -1000,7 +1000,7 @@
                     <use xlink:href="img/sprite/sprite.svg#flower"></use>
                   </svg>
                 </div>
-                <h4>Бережное отношение к природе</h4>
+                <h4>Бережное отношение к&nbsp;природе</h4>
                 <p>Уделяем первостепенное внимание охране окружающей среды и&nbsp;гарантируем, что туры оказывают
                   минимальное
                   воздействие на&nbsp;природную среду. Наша компания следует принципу &laquo;Не&nbsp;оставлять
@@ -1103,7 +1103,41 @@
           </div>
         </div>
       </section>
+      <section class="question">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/feedback-bg.png, img/feedback-bg@2x.png 2x" />
+          <source media="(min-width: 768px)" srcset="img/feedback-bg-tablet.png, img/feedback-bg-tablet@2x.png 2x" />
+          <img class="question__img" src="img/feedback-bg-mobile.png" width="320" height="621" alt="Горный пейзаж"
+            srcset="img/feedback-bg-mobile@2x.png 2x" />
+        </picture>
+        <h3>Остались вопросы?</h3>
+        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        <div data-form-validate="data-form-validate" data-callback="base">
+          <form class="question__form" method="post" action="https://echo.htmlacademy.ru" enctype="multipart/form-data"
+            autocomplete="off" data-form-validate>
+            <div class="question__input-wrapper">
+              <div data-validate-type="text" data-limitation="name" data-required="data-required">
+                <label class="question__label" for="name">
+                  <input type="text" name="your-name" placeholder="Как к вам обращаться?" data-name
+                    pattern="^[a-zA-ZA-Яа-яЁё\s\D [^0-9]]+$" id="name" minlength="1" maxlength="30" required />
+                </label>
+              </div>
+            </div>
 
+            <div class="question__input-wrapper">
+              <div data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+                data-required="data-required">
+                <label class="question__label" for="phone">
+                  <input placeholder="Телефон" type="tel" name="user-phone" />
+                </label>
+              </div>
+            </div>
+
+
+            <button class="question__btn btn" type="submit" data-button="submit-button">Отправить</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container footer__wrapper">

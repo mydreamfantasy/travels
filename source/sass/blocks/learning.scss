@@ -1,11 +1,11 @@
 .learning {
   padding-top: 124px;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 11px;
 
   @include vp-1199 {
     padding-top: 85px;
-    padding-bottom: 9px;
+    padding-bottom: 7px;
   }
 
   @include vp-767 {
@@ -107,12 +107,12 @@
 .learning__slider-buttons {
   position: absolute;
   right: 10%;
-  top: 39.5%;
+  top: 40%;
   z-index: 1;
 
   @include vp-1199 {
     right: 9%;
-    top: 36.5%;
+    top: 37.5%;
   }
 
   @include vp-767 {
@@ -182,7 +182,6 @@
 .learning__slider {
   margin: 0 95px;
   padding: 0 25px;
-  overflow: hidden;
 
   @include vp-1199 {
     margin: 0 20px;
@@ -194,6 +193,10 @@
     padding: 0 15px;
     padding-bottom: 30px;
   }
+
+  .swiper-wrapper {
+    align-items: stretch;
+  }
 }
 
 .learning__list {
@@ -203,13 +206,12 @@
   width: 100%;
   height: 100%;
   max-width: 1600px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   padding-top: 41px;
-  align-items: stretch;
 
   @include vp-1199 {
     padding-top: 32px;
-    margin-bottom: 34px;
+    padding-bottom: 34px;
   }
 
   @include vp-767 {

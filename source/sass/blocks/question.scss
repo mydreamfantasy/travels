@@ -1,0 +1,225 @@
+.question {
+  position: relative;
+  padding: 310px 0;
+
+  @include vp-1199 {
+    padding: 195px 0;
+  }
+
+  @include vp-767 {
+    padding: 180px 0;
+  }
+
+  h3 {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 35px;
+    margin: 0;
+    padding: 0;
+    margin-left: -16px;
+    padding-bottom: 17px;
+    text-align: center;
+    color: $color-default-white;
+
+    @include vp-1199 {
+      font-size: 25px;
+      font-weight: 800;
+      line-height: 25px;
+      margin-left: 0px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+      padding-bottom: 14px;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: $color-default-white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 41px;
+    margin-left: -19px;
+    letter-spacing: -0.3px;
+
+    @include vp-1199 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      padding: 0 215px 30px;
+      margin-left: 0px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 18px;
+      padding: 0 21px 27px;
+    }
+  }
+}
+
+.question__img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 800px;
+  top: 0;
+  left: 0;
+  background-color: $color-neon-blue;
+
+  @include vp-1199 {
+    height: 679px;
+  }
+
+  @include vp-767 {
+    height: 621px;
+  }
+}
+
+.question__form {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+
+  @include vp-1199 {
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.question__label {
+  width: 100%;
+
+  input {
+    width: 340px;
+    padding: 23px 30px;
+    border: none;
+    outline: none;
+    background-color: $color-default-white;
+    color: $color-resolution;
+    border: 1px solid rgba(2, 102, 193, 0.1);
+
+    @include vp-1199 {
+      width: 267px;
+      padding: 16px 14px;
+    }
+
+    @include vp-767 {
+      width: 290px;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      color: $color-shadow;
+      opacity: 0.5;
+      letter-spacing: -0.2px;
+
+      @include vp-1199 {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+
+    &:hover {
+      border: 1px solid $color-navi;
+
+      &::placeholder {
+        color: $color-navi;
+      }
+    }
+
+    &:focus-visible,
+    &:active {
+      outline: none;
+      border: 1px solid $color-resolution;
+
+      &::placeholder {
+        visibility: hidden;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.1;
+    }
+  }
+}
+
+.question__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 31px;
+
+  div {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.question__error-text {
+  display: none;
+}
+
+.question__input--error ~ .question__error-text {
+  display: block;
+  color: $color-error;
+}
+
+.question__btn {
+  padding: 22px 73px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: $color-default-white;
+  background: $color-navi;
+  user-select: none;
+  border: 1px solid $color-navi;
+  cursor: pointer;
+
+  @include vp-1199 {
+    margin-top: 7px;
+    padding: 20px 87px;
+  }
+
+  @include vp-767 {
+    margin-top: 1px;
+    padding: 17px 99px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution;
+    color: $color-resolution;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: $color-resolution;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
+.is-invalid .question__label {
+  input {
+    border-color: $color-error;
+  }
+}
