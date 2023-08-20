@@ -1,4 +1,26 @@
 .footer {
+  padding-top: 31px;
+  position: relative;
+
+  @include vp-1199 {
+    padding-top: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 31px;
+    padding-left: 5px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-shadow;
+    opacity: 0.2;
+  }
 }
 
 .footer__wrapper {
@@ -10,19 +32,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 37px;
+  padding-bottom: 12px;
 
   @include vp-1199 {
     display: grid;
     grid-template-columns: 120px 1fr;
-    column-gap: 10%;
+    column-gap: 12%;
     align-items: center;
+    padding-bottom: 32px;
   }
 
   @include vp-767 {
     align-items: start;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 21px;
     padding-bottom: 0;
   }
 }
@@ -66,6 +89,7 @@
 .footer__nav-list {
   margin: 0;
   padding: 0;
+  margin-left: -56px;
   display: flex;
   justify-content: space-between;
   gap: 31px;
@@ -74,13 +98,16 @@
   max-width: 600px;
 
   @include vp-1199 {
+    margin-left: 0;
     gap: 20px;
+    margin-top: -10px;
+    justify-content: start;
   }
 
   @include vp-767 {
     display: block;
     column-count: 2;
-    column-gap: 20%;
+    column-gap: 9%;
   }
 }
 
@@ -93,6 +120,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
+    letter-spacing: -0.1px;
   }
 
   @include vp-767 {
@@ -165,6 +193,12 @@
     outline-offset: 5px;
   }
 
+  &:active {
+    &::after {
+      display: none;
+    }
+  }
+
   &:disabled {
     opacity: 0.5;
   }
@@ -175,15 +209,16 @@
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 15px;
+  gap: 20px;
   list-style-type: none;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 
   @include vp-767 {
     align-self: flex-start;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 22px;
+    padding-bottom: 14px;
   }
 }
 
@@ -237,7 +272,7 @@
 .footer__policy {
   display: inline-block;
   align-self: center;
-  margin-bottom: 40px;
+  margin-bottom: 29px;
   position: relative;
   font-size: 12px;
   font-weight: 300;
@@ -264,6 +299,12 @@
   &:focus-visible {
     outline: 1px solid $color-shadow;
     outline-offset: 5px;
+  }
+
+  &:active {
+    &::after {
+      display: none;
+    }
   }
 
   &:disabled {

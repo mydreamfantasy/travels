@@ -18,15 +18,15 @@ window.addEventListener("DOMContentLoaded", () => {
   // ---------------------------------
   initVideo();
   iosVhFix();
+
+  // Modules
+  // ---------------------------------
   getSwiper();
   getSwiperTours();
   getSwiperLearn();
   getSwiperReviews();
   getSwiperFeatures();
   getSwiperGallery();
-
-  // Modules
-  // ---------------------------------
 
   let navMain = document.querySelector(".header__nav");
   let navToggle = document.querySelector(".header__nav__toggle");
@@ -43,6 +43,52 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  const map = L.map("map")
+    .on("load", () => {
+      console.log("Карта инициализирована");
+    })
+    .setView(
+      {
+        lat: 55.774836,
+        lng: 37.632664,
+      },
+      17
+    );
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>',
+  }).addTo(map);
+
+  const mainPinIcon = L.icon({
+    iconUrl: "/img/pin.svg",
+    iconSize: [38, 50],
+    iconAnchor: [5, 25],
+  });
+
+  const mainPinMarker = L.marker(
+    {
+      lat: 55.774836,
+      lng: 37.632664,
+    },
+    {
+      icon: mainPinIcon,
+    }
+  );
+
+  mainPinMarker.addTo(map);
+
+  mainPinMarker.on("moveend", (evt) => {
+    console.log(evt.target.getLatLng());
+  });
+
+  map.setView(
+    {
+      lat: 55.774836,
+      lng: 37.632664,
+    },
+    17
+  );
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener("load", () => {

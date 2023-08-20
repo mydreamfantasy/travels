@@ -1,6 +1,6 @@
 .features {
   position: relative;
-  padding-bottom: 190px;
+  padding-bottom: 168px;
 
   background: url("../../img/clouds-right.png") right -16% no-repeat;
 
@@ -68,7 +68,7 @@
   }
 
   @include vp-767 {
-    padding-top: 33px;
+    padding-top: 36px;
   }
 }
 

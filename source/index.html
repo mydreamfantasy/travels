@@ -19,6 +19,9 @@
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" />
   <link rel="preload" href="fonts/GothamPro-Light.woff2" as="font" />
   <link rel="preload" href="fonts/rouble.woff2" as="font" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="">
 </head>
 
 <body>
@@ -1132,11 +1135,63 @@
                 </label>
               </div>
             </div>
-
-
             <button class="question__btn btn" type="submit" data-button="submit-button">Отправить</button>
           </form>
         </div>
+      </section>
+      <section class="contacts container">
+        <div class="contacts__wrapper">
+          <div class="contacts__title-block">
+            <h2>
+              Контакты
+            </h2>
+            <span>Контакты</span>
+          </div>
+          <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
+            увлекательными историями и подобрать для вас тур.</p>
+
+
+          <div class="contacts__block">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <svg width="26" height="26">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <div class="contacts__wrap">
+                  <h5>Телефон</h5>
+                  <div class="contacts__phone-wrapper">
+                    <a class="contacts__phone" href="tel:+79837454545">8 983 745 45 45</a>
+                  </div>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <svg width="26" height="26">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+                <div class="contacts__wrap">
+                  <h5>E-mail</h5>
+                  <div class="contacts__mail-wrapper">
+                    <a class="contacts__mail" href="mailto:info@lifetour.com">info@lifetour.com</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="contacts__item">
+                <svg width="26" height="26">
+                  <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+                <div class="contacts__wrap">
+                  <h5>Адрес</h5>
+                  <address>
+                    <p>г. Москва, пр-т Мира, д. 14, офис 101</p>
+                  </address>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contacts__map map" id="map"></div>
       </section>
     </main>
     <footer class="footer">
@@ -1197,13 +1252,16 @@
           </li>
         </ul>
 
-        <a href="#" class="footer__policy">Политика конфеденциальности</a>
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
       </div>
     </footer>
   </div>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 </body>
 
 </html>
