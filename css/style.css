@@ -2085,12 +2085,12 @@ button,
   font-weight: 500;
   line-height: 16px;
   margin-bottom: 150px;
+  border: 1px solid #0266c1;
 }
 
 .banner__link:hover,
 .banner__link:focus-visible {
   outline: none;
-  padding: 20px 53px;
   background-color: #ffffff;
   border: 1px solid #1c3374;
   color: #1c3374;
@@ -2592,7 +2592,7 @@ button,
   position: absolute;
   right: 10%;
   top: 40%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .learning__button {
@@ -4830,6 +4830,10 @@ button,
     height: 568px;
   }
 
+  .banner__wrapper {
+    padding-top: 73px;
+  }
+
   .banner__wrapper h2 {
     font-size: 30px;
     line-height: 30px;
@@ -4989,7 +4993,7 @@ button,
 
   .learning__slider-buttons {
     right: 12%;
-    top: 38%;
+    top: 36%;
   }
 
   .learning__slider {
