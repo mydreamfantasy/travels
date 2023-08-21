@@ -4078,6 +4078,7 @@ button,
   }
 
   .banner__wrapper {
+    padding-top: 73px;
     padding-bottom: 0;
   }
 
@@ -4189,6 +4190,7 @@ button,
   }
 
   .tours__geo p {
+    padding: 0;
     font-size: 12px;
     font-weight: 500;
     line-height: 12px;
@@ -4919,6 +4921,7 @@ button,
   }
 
   .tours__geo p {
+    padding: 0;
     font-size: 12px;
     font-weight: 500;
     line-height: 12px;
@@ -4940,6 +4943,7 @@ button,
   }
 
   .tours__info-block p {
+    padding-right: 5px;
     font-size: 12px;
     font-weight: 300;
     line-height: 100%;
