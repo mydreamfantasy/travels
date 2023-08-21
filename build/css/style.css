@@ -2859,6 +2859,20 @@ button,
   font-weight: 500;
   line-height: 12px;
 }
+@media (max-width: 1199px) {
+  .tours__geo p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .tours__geo p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+}
 
 .tours__days {
   display: -webkit-box;
@@ -2880,11 +2894,25 @@ button,
   .tours__days p {
     white-space: nowrap;
     padding-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+}
+@media (max-width: 1023px) {
+  .tours__days p {
+    padding-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
   }
 }
 @media (max-width: 767px) {
   .tours__days p {
     padding-right: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
   }
 }
 
@@ -2928,8 +2956,26 @@ button,
   line-height: 100%;
   padding-bottom: 7px;
 }
+@media (max-width: 1023px) {
+  .tours__info-block p {
+    padding-right: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .tours__info-block p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 100%;
+  }
+}
 .tours__info-block:first-of-type p {
   padding-bottom: 2px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
 }
 .tours__info-block:not(:first-of-type) p:last-of-type {
   font-size: 13px;
@@ -3325,6 +3371,7 @@ button,
   .learning__item p {
     font-size: 12px;
     line-height: 18px;
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
