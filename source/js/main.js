@@ -44,7 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const map = L.map('map')
       .on('load', () => {
-        console.log('Карта инициализирована');
       })
       .setView(
           {
@@ -78,7 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
   mainPinMarker.addTo(map);
 
   mainPinMarker.on('moveend', (evt) => {
-    console.log(evt.target.getLatLng());
+   evt.target.getLatLng()
   });
 
   map.setView(
