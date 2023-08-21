@@ -2411,6 +2411,9 @@ button,
 
 .tours__info-block:first-of-type p {
   padding-bottom: 2px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
 }
 
 .tours__info-block:not(:first-of-type) p:last-of-type {
@@ -4185,9 +4188,18 @@ button,
     padding-right: 25px;
   }
 
+  .tours__geo p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+
   .tours__days p {
     white-space: nowrap;
     padding-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
   }
 
   .tours__slider-buttons {
@@ -4250,6 +4262,7 @@ button,
   .learning__item p {
     font-size: 12px;
     line-height: 18px;
+    padding: 0;
   }
 
   .process {
@@ -4638,6 +4651,20 @@ button,
     padding-right: 38px;
   }
 
+  .tours__days p {
+    padding-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+
+  .tours__info-block p {
+    padding-right: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 100%;
+  }
+
   .process__list {
     gap: 92px 30px;
   }
@@ -4887,8 +4914,17 @@ button,
     padding: 8px 0;
   }
 
+  .tours__geo p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+
   .tours__days p {
     padding-right: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
   }
 
   .tours__info {
@@ -4897,6 +4933,12 @@ button,
 
   .tours__info::before {
     top: -14px;
+  }
+
+  .tours__info-block p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 100%;
   }
 
   .tours__info-block:not(:first-of-type) p:last-of-type {
