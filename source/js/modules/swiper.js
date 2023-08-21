@@ -120,6 +120,7 @@ export const getSwiperReviews = () => {
         768: {
           slidesPerView: "auto",
           centeredSlides: true,
+          spaceBetween: 30,
         },
       },
     });
