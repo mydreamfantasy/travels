@@ -1,19 +1,19 @@
-import { iosVhFix } from "./utils/ios-vh-fix";
-import { initModals } from "./modules/modals/init-modals";
-import { Form } from "./modules/form-validate/form";
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
 import {
   getSwiper,
   getSwiperTours,
   getSwiperLearn,
   getSwiperReviews,
   getSwiperFeatures,
-  getSwiperGallery,
-} from "./modules/swiper";
-import { initVideo } from "./modules/video";
+  getSwiperGallery
+} from './modules/swiper';
+import {initVideo} from './modules/video';
 
 // ---------------------------------
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
   initVideo();
@@ -28,70 +28,70 @@ window.addEventListener("DOMContentLoaded", () => {
   getSwiperFeatures();
   getSwiperGallery();
 
-  let navMain = document.querySelector(".header__nav");
-  let navToggle = document.querySelector(".header__nav__toggle");
+  let navMain = document.querySelector('.header__nav');
+  let navToggle = document.querySelector('.header__nav__toggle');
 
-  navMain.classList.remove("header__nav--nojs");
+  navMain.classList.remove('header__nav--nojs');
 
-  navToggle.addEventListener("click", function () {
-    if (navMain.classList.contains("header__nav--closed")) {
-      navMain.classList.remove("header__nav--closed");
-      navMain.classList.add("header__nav--opened");
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('header__nav--closed')) {
+      navMain.classList.remove('header__nav--closed');
+      navMain.classList.add('header__nav--opened');
     } else {
-      navMain.classList.add("header__nav--closed");
-      navMain.classList.remove("header__nav--opened");
+      navMain.classList.add('header__nav--closed');
+      navMain.classList.remove('header__nav--opened');
     }
   });
 
-  const map = L.map("map")
-    .on("load", () => {
-      console.log("Карта инициализирована");
-    })
-    .setView(
-      {
-        lat: 55.774836,
-        lng: 37.632664,
-      },
-      17
-    );
+  const map = L.map('map')
+      .on('load', () => {
+        console.log('Карта инициализирована');
+      })
+      .setView(
+          {
+            lat: 55.774836,
+            lng: 37.632664,
+          },
+          17
+      );
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>',
   }).addTo(map);
 
   const mainPinIcon = L.icon({
-    iconUrl: "/img/pin.svg",
+    iconUrl: '/img/pin.svg',
     iconSize: [38, 50],
     iconAnchor: [5, 25],
   });
 
   const mainPinMarker = L.marker(
-    {
-      lat: 55.774836,
-      lng: 37.632664,
-    },
-    {
-      icon: mainPinIcon,
-    }
+      {
+        lat: 55.774836,
+        lng: 37.632664,
+      },
+      {
+        icon: mainPinIcon,
+      }
   );
 
   mainPinMarker.addTo(map);
 
-  mainPinMarker.on("moveend", (evt) => {
+  mainPinMarker.on('moveend', (evt) => {
     console.log(evt.target.getLatLng());
   });
 
   map.setView(
-    {
-      lat: 55.774836,
-      lng: 37.632664,
-    },
-    17
+      {
+        lat: 55.774836,
+        lng: 37.632664,
+      },
+      17
   );
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener("load", () => {
+  window.addEventListener('load', () => {
     initModals();
     const form = new Form();
     window.form = form;

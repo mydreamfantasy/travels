@@ -97,10 +97,6 @@
     display: none;
   }
 
-  svg {
-    stroke: #fff;
-  }
-
   &:hover,
   &:focus-visible {
     outline: none;
@@ -114,7 +110,7 @@
   }
 
   svg {
-    stroke: #fff;
+    stroke: $color-default-white;
   }
 
   &:active {
@@ -122,7 +118,7 @@
   }
 
   &:active svg {
-    stroke: #fff;
+    stroke: $color-default-white;
   }
 
   &--next {

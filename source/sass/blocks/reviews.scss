@@ -84,10 +84,6 @@
     display: none;
   }
 
-  svg {
-    stroke: #fff;
-  }
-
   &:hover,
   &:focus-visible {
     outline: none;
@@ -101,7 +97,7 @@
   }
 
   svg {
-    stroke: #fff;
+    stroke: $color-default-white;
   }
 
   &:active {
@@ -109,7 +105,7 @@
   }
 
   &:active svg {
-    stroke: #fff;
+    stroke: $color-default-white;
   }
 
   &--next {
@@ -163,9 +159,9 @@
 }
 
 .reviews__item {
-  border: 0px solid $color-default-white;
+  border: 0 solid $color-default-white;
   background: $color-default-white;
-  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   display: grid;
   grid-template-columns: 258px 1fr;
   gap: 30px;

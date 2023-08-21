@@ -431,6 +431,7 @@
 
   .header__nav--nojs .header__nav-item {
     display: block;
+
     a {
       color: $color-shadow;
 
@@ -453,6 +454,7 @@
     }
   }
 }
+
 @include vp-767 {
   .header__nav--opened .header__nav-list {
     top: 71px;

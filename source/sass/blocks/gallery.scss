@@ -103,10 +103,6 @@
     display: none;
   }
 
-  svg {
-    stroke: #fff;
-  }
-
   &:hover,
   &:focus-visible {
     outline: none;
@@ -120,7 +116,7 @@
   }
 
   svg {
-    stroke: #fff;
+    stroke: $color-default-white;
   }
 
   &:active {
@@ -128,7 +124,7 @@
   }
 
   &:active svg {
-    stroke: #fff;
+    stroke: $color-default-white;
   }
 
   &--next {
@@ -145,14 +141,6 @@
 
   &.swiper-button-disabled {
     background-color: rgba(2, 102, 193, 0.1);
-  }
-}
-
-.gallery__slider {
-  @include vp-1199 {
-  }
-
-  @include vp-767 {
   }
 }
 

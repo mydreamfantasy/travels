@@ -75,6 +75,7 @@
     width: 118px;
     height: 34px;
   }
+
   @include vp-767 {
     width: 112px;
   }
@@ -242,6 +243,7 @@
     &:hover,
     &:focus-visible {
       outline: none;
+
       &::after {
         opacity: 1;
       }

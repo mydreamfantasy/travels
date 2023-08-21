@@ -134,10 +134,6 @@
     display: none;
   }
 
-  svg {
-    stroke: #fff;
-  }
-
   &:hover,
   &:focus-visible {
     outline: none;
@@ -151,7 +147,7 @@
   }
 
   svg {
-    stroke: #fff;
+    stroke: $color-default-white;
   }
 
   &:active {
@@ -159,7 +155,7 @@
   }
 
   &:active svg {
-    stroke: #fff;
+    stroke: $color-default-white;
   }
 
   &--next {
@@ -224,7 +220,7 @@
   padding: 20px 18px 20px 20px;
   border: 1px solid $color-default-white;
   background-color: $color-default-white;
-  box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.1);
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
 
   @include vp-1199 {
     padding: 15px 11px 15px 15px;
@@ -306,6 +302,7 @@
     &:hover,
     &:focus-visible {
       outline: none;
+
       &::after {
         opacity: 1;
       }

@@ -210,7 +210,6 @@
 .tours__info {
   display: flex;
   justify-content: space-between;
-  justify-content: space-between;
   position: relative;
   margin-top: 36px;
 
@@ -290,6 +289,7 @@
     outline: none;
     color: $color-resolution;
   }
+
   &:hover svg,
   &:focus-visible svg {
     stroke: $color-resolution;
@@ -348,10 +348,6 @@
     display: none;
   }
 
-  svg {
-    stroke: #fff;
-  }
-
   &:hover,
   &:focus-visible {
     outline: none;
@@ -365,7 +361,7 @@
   }
 
   svg {
-    stroke: #fff;
+    stroke: $color-default-white;
   }
 
   &:active {
@@ -373,7 +369,7 @@
   }
 
   &:active svg {
-    stroke: #fff;
+    stroke: $color-default-white;
   }
 
   &--next {
