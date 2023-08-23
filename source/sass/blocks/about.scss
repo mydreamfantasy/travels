@@ -14,13 +14,13 @@
   position: absolute;
   top: -19px;
   left: 0;
-  background: url("../../img/lake.png") left center no-repeat;
+  background: url("../img/lake.png") left center no-repeat;
   background-size: contain;
 
   @include vp-1199 {
     top: -12px;
     width: 62%;
-    background: url("../../img/lake-tablet.png") left center no-repeat;
+    background: url("../img/lake-tablet.png") left center no-repeat;
     background-size: contain;
   }
 
@@ -28,7 +28,7 @@
     width: 100%;
     height: 350px;
     top: -85px;
-    background: url("../../img/lake-phone.png") left center no-repeat;
+    background: url("../img/lake-phone.png") left center no-repeat;
     background-size: 100%;
   }
 }

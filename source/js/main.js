@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }).addTo(map);
 
   const mainPinIcon = L.icon({
-    iconUrl: '/img/pin.svg',
+    iconUrl: './img/pin.svg',
     iconSize: [38, 50],
     iconAnchor: [5, 25],
   });
