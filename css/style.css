@@ -3994,6 +3994,10 @@ button,
     outline-offset: 5px;
   }
 
+  .header__nav--opened .header__nav-item a:active::after {
+    display: none;
+  }
+
   .header__nav--nojs .header__nav-list {
     width: 100vw;
     background-color: #ffffff;
@@ -4024,6 +4028,10 @@ button,
   .header__nav--nojs .header__nav-item a:focus-visible {
     outline: 1px solid #2d383f;
     outline-offset: 5px;
+  }
+
+  .header__nav--nojs .header__nav-item a:active::after {
+    display: none;
   }
 
   .footer {
@@ -4256,7 +4264,7 @@ button,
   }
 
   .learning__item img {
-    width: 176px;
+    width: 100%;
     height: 212px;
     -o-object-fit: cover;
     object-fit: cover;
@@ -4767,6 +4775,7 @@ button,
     padding-top: 28px;
     padding-left: 14px;
     gap: 22px;
+    padding-bottom: 50px;
   }
 
   .header__nav--opened .header__nav-item {
@@ -5025,7 +5034,7 @@ button,
   }
 
   .learning__item img {
-    width: 250px;
+    width: 100%;
     height: 212px;
   }
 
@@ -5373,10 +5382,6 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .main__first-banner {
-    background: url("../img/clouds@2x.png") right -15% no-repeat;
-  }
-
   .main__second-banner {
     background: url("../img/clouds-little@2x.png") right 15% no-repeat;
   }
