@@ -70,10 +70,15 @@
         <ul class="banner__list swiper-wrapper" data-swiper="banner">
           <li class="banner__item swiper-slide">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/banner.webp, img/banner@2x.webp 2x" />
               <source media="(min-width: 1200px)" srcset="img/banner.png, img/banner@2x.png 2x" />
               <source media="(min-width: 768px)"
+                srcset="img/banner/banner-1-tablet.webp, img/banner/banner-1-tablet@2x.webp 2x" />
+              <source media="(min-width: 768px)"
                 srcset="img/banner/banner-1-tablet.png, img/banner/banner-1-tablet@2x.png 2x" />
-              <img class="banner__img" src="img/banner.png" width="320" height="568" alt="Горный пейзаж"
+              <source media="(min-width: 768px)"
+                srcset="img/banner/banner-1-phone.webp, img/banner/banner-1-phone@2x.webp 2x" />
+              <img class="banner__img" src="img/banner/banner-1-phone.png" width="320" height="568" alt="Горный пейзаж"
                 srcset="img/banner/banner-1-phone@2x.png 2x" />
             </picture>
 
@@ -107,6 +112,7 @@
             <div class="banner__video" data-video>
               <div class="banner__video-img">
                 <picture>
+                  <source srcset="img/banner/preview-1.webp, img/banner/preview-1@2x.webp 2x" />
                   <img src="img/banner/preview-1.png" alt="Человек в горах" srcset="img/banner/preview-1@2x.png 2x"
                     height="482" width="317" />
                 </picture>
@@ -119,9 +125,13 @@
           </li>
           <li class="banner__item swiper-slide">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/banner/banner-2.webp, img/banner/banner-2@2x.webp 2x" />
               <source media="(min-width: 1200px)" srcset="img/banner/banner-2.png, img/banner/banner-2@2x.png 2x" />
               <source media="(min-width: 768px)"
+                srcset="img/banner/banner-2-tablet.webp, img/banner/banner-2-tablet@2x.webp 2x" />
+              <source media="(min-width: 768px)"
                 srcset="img/banner/banner-2-tablet.png, img/banner/banner-2-tablet@2x.png 2x" />
+              <source srcset="img/banner/banner-2-phone.webp, img/banner/banner-2-phone@2x.webp 2x" />
               <img class="banner__img" src="img/banner/banner-2-phone.png" width="320" height="568" alt="Горный пейзаж"
                 srcset="img/banner/banner-2-phone@2x.png 2x" />
             </picture>
@@ -157,7 +167,11 @@
               <div class="banner__video-img">
                 <picture>
                   <source media="(min-width: 1200px)"
+                    srcset="img/banner/preview-2.webp, img/banner/preview-2@2x.webp 2x" />
+                  <source media="(min-width: 1200px)"
                     srcset="img/banner/preview-2.png, img/banner/preview-2@2x.png 2x" />
+                  <source media="(min-width: 768px)"
+                    srcset="img/banner/preview-2-tablet.webp, img/banner/preview-2-tablet@2x.webp 2x" />
                   <source media="(min-width: 768px)"
                     srcset="img/banner/preview-2-tablet.png, img/banner/preview-2-tablet@2x.png 2x" />
                   <img src="img/banner/preview-2.png" alt="Человек в горах" srcset="img/banner/preview-2@2x.png 2x"
@@ -170,9 +184,13 @@
           </li>
           <li class="banner__item swiper-slide">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/banner/banner-3.webp, img/banner/banner-3@2x.webp 2x" />
               <source media="(min-width: 1200px)" srcset="img/banner/banner-3.png, img/banner/banner-3@2x.png 2x" />
               <source media="(min-width: 768px)"
+                srcset="img/banner/banner-3-tablet.webp, img/banner/banner-3-tablet@2x.webp 2x" />
+              <source media="(min-width: 768px)"
                 srcset="img/banner/banner-3-tablet.png, img/banner/banner-3-tablet@2x.png 2x" />
+              <source srcset="img/banner/banner-3-phone.webp, img/banner/banner-3-phone@2x.webp 2x" />
               <img class="banner__img" src="img/banner/banner-3-phone.png" width="320" height="568" alt="Горный пейзаж"
                 srcset="img/banner/banner-3-phone@2x.png 2x" />
             </picture>
@@ -244,7 +262,10 @@
             <ul class="tours__list swiper-wrapper">
               <li class="tours__item swiper-slide">
                 <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/tours-1-desktop.webp, img/tours-1-desktop@2x.webp 2x" />
                   <source media="(min-width: 768px)" srcset="img/tours-1-desktop.png, img/tours-1-desktop@2x.png 2x" />
+                  <source srcset="img/tours-1.webp, img/tours-1@2x.webp 2x" />
                   <img src="img/tours-1.png" alt="Горы" width="290" height="412" srcset="img/tours-1@2x.png 2x" />
                 </picture>
                 <div class="tours__block">
@@ -288,7 +309,10 @@
               </li>
               <li class="tours__item swiper-slide">
                 <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/tours-2-desktop.webp, img/tours-2-desktop@2x.webp 2x" />
                   <source media="(min-width: 768px)" srcset="img/tours-2-desktop.png, img/tours-2-desktop@2x.png 2x" />
+                  <source srcset="img/tours-2.webp, img/tours-2@2x.webp 2x" />
                   <img src="img/tours-2.png" alt="Горы" width="290" height="412" srcset="img/tours-2@2x.png 2x" />
                 </picture>
                 <div class="tours__block">
@@ -332,7 +356,9 @@
               </li>
               <li class="tours__item swiper-slide">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/tours-3-desktop.png, img/tours-3-desktop@2x.png 2x" />
+                  <source media="(min-width: 768px)"
+                    srcset="img/tours-3-desktop.webp, img/tours-3-desktop@2x.webp 2x" />
+                  <source srcset="img/tours-3.webp, img/tours-3@2x.webp 2x" />
                   <img src="img/tours-3.png" alt="Горы" width="290" height="412" srcset="img/tours-3@2x.png 2x" />
                 </picture>
                 <div class="tours__block">
@@ -550,9 +576,14 @@
               <li class="learning__item swiper-slide">
                 <picture>
                   <source media="(min-width: 1200px)"
+                    srcset="img/instructors/first.webp, img/instructors/first@2x.webp 2x" />
+                  <source media="(min-width: 1200px)"
                     srcset="img/instructors/first.png, img/instructors/first@2x.png 2x" />
                   <source media="(min-width: 768px)"
+                    srcset="img/instructors/first-tablet.webp, img/instructors/first-tablet@2x.webp 2x" />
+                  <source media="(min-width: 768px)"
                     srcset="img/instructors/first-tablet.png, img/instructors/first-tablet@2x.png 2x" />
+                  <source srcset="img/instructors/first-phone.webp, img/instructors/first-phone@2x.webp 2x" />
                   <img src="img/instructors/first-phone.png" alt="Инстуктор" width="250" height="212"
                     srcset="img/instructors/first-phone@2x.png 2x" />
                 </picture>
@@ -568,9 +599,14 @@
               <li class="learning__item swiper-slide">
                 <picture>
                   <source media="(min-width: 1200px)"
+                    srcset="img/instructors/second.webp, img/instructors/second@2x.webp 2x" />
+                  <source media="(min-width: 1200px)"
                     srcset="img/instructors/second.png, img/instructors/second@2x.png 2x" />
                   <source media="(min-width: 768px)"
+                    srcset="img/instructors/second-tablet.webp, img/instructors/second-tablet@2x.webp 2x" />
+                  <source media="(min-width: 768px)"
                     srcset="img/instructors/second-tablet.png, img/instructors/second-tablet@2x.png 2x" />
+                  <source srcset="img/instructors/second-phone.webp, img/instructors/second-phone@2x.webp 2x" />
                   <img src="img/instructors/second-phone.png" alt="Инстуктор" width="250" height="212"
                     srcset="img/instructors/second-phone@2x.png 2x" />
                 </picture>

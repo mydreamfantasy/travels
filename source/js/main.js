@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
   mainPinMarker.addTo(map);
 
   mainPinMarker.on('moveend', (evt) => {
-   evt.target.getLatLng()
+    evt.target.getLatLng();
   });
 
   map.setView(

@@ -1529,15 +1529,15 @@ button,
 }
 
 .main__first-banner {
-  background: url("img/clouds.png") right -15% no-repeat;
+  background: url("../img/clouds.png") right -15% no-repeat;
 }
 
 .main__second-banner {
-  background: url("img/clouds-little.png") right 15% no-repeat;
+  background: url("../img/clouds-little.png") right 15% no-repeat;
 }
 
 .main__third-banner {
-  background: url("img/clouds-left.png") left 36% no-repeat;
+  background: url("../img/clouds-left.png") left 36% no-repeat;
 }
 
 .btn {
@@ -2591,7 +2591,7 @@ button,
 .learning__slider-buttons {
   position: absolute;
   right: 10%;
-  top: 40%;
+  top: 39%;
   z-index: 2;
 }
 
@@ -2760,7 +2760,7 @@ button,
 }
 
 .process {
-  padding-bottom: 100px;
+  padding-bottom: 97px;
 }
 
 .process h3 {
@@ -2849,7 +2849,7 @@ button,
   position: absolute;
   top: -19px;
   left: 0;
-  background: url("../../img/lake.png") left center no-repeat;
+  background: url("../img/lake.png") left center no-repeat;
   background-size: contain;
 }
 
@@ -3092,7 +3092,7 @@ button,
 .features {
   position: relative;
   padding-bottom: 168px;
-  background: url("img/clouds-right.png") right -16% no-repeat;
+  background: url("../img/clouds-right.png") right -16% no-repeat;
 }
 
 .features__title-block {
@@ -3813,7 +3813,7 @@ button,
   }
 
   .main__first-banner {
-    background: url("img/clouds-tablet.png") right -171% no-repeat;
+    background: url("../img/clouds-tablet.png") right -171% no-repeat;
   }
 
   .main__second-banner {
@@ -4194,6 +4194,7 @@ button,
     font-size: 12px;
     font-weight: 500;
     line-height: 12px;
+    padding-right: 0;
   }
 
   .tours__days p {
@@ -4237,7 +4238,7 @@ button,
 
   .learning__slider-buttons {
     right: 9%;
-    top: 37.5%;
+    top: 36.5%;
   }
 
   .learning__slider {
@@ -4289,7 +4290,7 @@ button,
   .process__list::before {
     content: "";
     position: absolute;
-    background: url("../../img/svg/progress.svg") no-repeat;
+    background: url("../img/svg/progress.svg") no-repeat;
     background-size: contain;
     top: 56px;
     left: 0;
@@ -4317,7 +4318,7 @@ button,
   .about__img {
     top: -12px;
     width: 62%;
-    background: url("../../img/lake-tablet.png") left center no-repeat;
+    background: url("../img/lake-tablet.png") left center no-repeat;
     background-size: contain;
   }
 
@@ -4382,7 +4383,7 @@ button,
 
   .reviews__list {
     margin: 0 0 0 -60px;
-    padding-bottom: 88px;
+    padding-bottom: 82px;
   }
 
   .reviews__item {
@@ -4632,6 +4633,7 @@ button,
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.2px;
+    padding-bottom: 0;
   }
 
   .contacts__phone {
@@ -4645,6 +4647,12 @@ button,
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.2px;
+  }
+}
+
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
+  .about__img {
+    background-image: url("../img/lake-table@2x.png");
   }
 }
 
@@ -4678,7 +4686,7 @@ button,
   }
 
   .main__first-banner {
-    background: url("img/clouds-phone.png") right 18% no-repeat;
+    background: url("../img/clouds-phone.png") right 18% no-repeat;
   }
 
   .header {
@@ -4997,7 +5005,7 @@ button,
 
   .learning__slider-buttons {
     right: 12%;
-    top: 36%;
+    top: 38%;
   }
 
   .learning__slider {
@@ -5022,7 +5030,10 @@ button,
   }
 
   .learning__item p {
+    font-size: 12px;
+    line-height: 18px;
     padding-right: 10px;
+    padding-bottom: 0;
   }
 
   .learning__wrapper {
@@ -5093,7 +5104,7 @@ button,
     width: 100%;
     height: 350px;
     top: -85px;
-    background: url("../../img/lake-phone.png") left center no-repeat;
+    background: url("../img/lake-phone.png") left center no-repeat;
     background-size: 100%;
   }
 
@@ -5352,5 +5363,25 @@ button,
   .contacts__wrap p {
     line-height: 20px;
     padding-right: 96px;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .about__img {
+    background-image: url("../img/lake-phone@2x.png");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .main__first-banner {
+    background: url("../img/clouds@2x.png") right -15% no-repeat;
+  }
+
+  .main__second-banner {
+    background: url("../img/clouds-little@2x.png") right 15% no-repeat;
+  }
+
+  .about__img {
+    background-image: url("../img/lake@2x.png");
   }
 }

@@ -17,11 +17,19 @@
   background: url("../img/lake.png") left center no-repeat;
   background-size: contain;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/lake@2x.png");
+  }
+
   @include vp-1199 {
     top: -12px;
     width: 62%;
     background: url("../img/lake-tablet.png") left center no-repeat;
     background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/lake-table@2x.png");
+    }
   }
 
   @include vp-767 {
@@ -30,6 +38,10 @@
     top: -85px;
     background: url("../img/lake-phone.png") left center no-repeat;
     background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/lake-phone@2x.png");
+    }
   }
 }
 

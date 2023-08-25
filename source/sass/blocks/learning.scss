@@ -107,17 +107,17 @@
 .learning__slider-buttons {
   position: absolute;
   right: 10%;
-  top: 40%;
+  top: 39%;
   z-index: 2;
 
   @include vp-1199 {
     right: 9%;
-    top: 37.5%;
+    top: 36.5%;
   }
 
   @include vp-767 {
     right: 12%;
-    top: 36%;
+    top: 38%;
   }
 }
 
@@ -262,7 +262,10 @@
     }
 
     @include vp-767 {
+      font-size: 12px;
+      line-height: 18px;
       padding-right: 10px;
+      padding-bottom: 0;
     }
   }
 }
