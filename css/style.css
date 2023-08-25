@@ -2591,7 +2591,7 @@ button,
 .learning__slider-buttons {
   position: absolute;
   right: 10%;
-  top: 40%;
+  top: 39%;
   z-index: 2;
 }
 
@@ -2760,7 +2760,7 @@ button,
 }
 
 .process {
-  padding-bottom: 100px;
+  padding-bottom: 97px;
 }
 
 .process h3 {
@@ -4194,6 +4194,7 @@ button,
     font-size: 12px;
     font-weight: 500;
     line-height: 12px;
+    padding-right: 0;
   }
 
   .tours__days p {
@@ -4237,7 +4238,7 @@ button,
 
   .learning__slider-buttons {
     right: 9%;
-    top: 37.5%;
+    top: 36.5%;
   }
 
   .learning__slider {
@@ -4382,7 +4383,7 @@ button,
 
   .reviews__list {
     margin: 0 0 0 -60px;
-    padding-bottom: 88px;
+    padding-bottom: 82px;
   }
 
   .reviews__item {
@@ -4632,6 +4633,7 @@ button,
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.2px;
+    padding-bottom: 0;
   }
 
   .contacts__phone {
@@ -4645,6 +4647,12 @@ button,
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.2px;
+  }
+}
+
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
+  .about__img {
+    background-image: url("../img/lake-table@2x.png");
   }
 }
 
@@ -4997,7 +5005,7 @@ button,
 
   .learning__slider-buttons {
     right: 12%;
-    top: 36%;
+    top: 38%;
   }
 
   .learning__slider {
@@ -5022,7 +5030,10 @@ button,
   }
 
   .learning__item p {
+    font-size: 12px;
+    line-height: 18px;
     padding-right: 10px;
+    padding-bottom: 0;
   }
 
   .learning__wrapper {
@@ -5352,5 +5363,25 @@ button,
   .contacts__wrap p {
     line-height: 20px;
     padding-right: 96px;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .about__img {
+    background-image: url("../img/lake-phone@2x.png");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .main__first-banner {
+    background: url("../img/clouds@2x.png") right -15% no-repeat;
+  }
+
+  .main__second-banner {
+    background: url("../img/clouds-little@2x.png") right 15% no-repeat;
+  }
+
+  .about__img {
+    background-image: url("../img/lake@2x.png");
   }
 }
