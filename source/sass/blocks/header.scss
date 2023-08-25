@@ -417,6 +417,12 @@
         outline: 1px solid $color-shadow;
         outline-offset: 5px;
       }
+
+      &:active {
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 
@@ -451,6 +457,12 @@
         outline: 1px solid $color-shadow;
         outline-offset: 5px;
       }
+
+      &:active {
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -461,6 +473,7 @@
     padding-top: 28px;
     padding-left: 14px;
     gap: 22px;
+    padding-bottom: 50px;
   }
 
   .header__nav--opened .header__nav-item {

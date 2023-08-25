@@ -237,13 +237,13 @@
     margin-bottom: 17px;
 
     @include vp-1199 {
-      width: 176px;
+      width: 100%;
       height: 212px;
       object-fit: cover;
     }
 
     @include vp-767 {
-      width: 250px;
+      width: 100%;
       height: 212px;
     }
   }
