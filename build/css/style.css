@@ -2565,6 +2565,13 @@ button,
     height: 300px;
   }
 }
+@media (max-width: 767px) {
+  .banner__video iframe {
+    border: none;
+    width: 340px;
+    height: 220px;
+  }
+}
 
 .banner__video-img {
   position: relative;
@@ -2642,30 +2649,6 @@ button,
     left: 41.2%;
     gap: 4px;
   }
-}
-
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  opacity: 1;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  display: inline-block;
-  margin-right: 8px;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-@media (max-width: 767px) {
-  .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-  }
-}
-
-.swiper-pagination-bullet-active {
-  background: #ffffff;
 }
 
 .tours {
@@ -3789,6 +3772,11 @@ button,
   margin: 0;
   padding: 0;
 }
+@media (max-width: 1199px) {
+  .about__text-wrap br {
+    display: none;
+  }
+}
 .about__text-wrap h3 {
   font-size: 21px;
   font-weight: 700;
@@ -3817,9 +3805,6 @@ button,
   .about__text-wrap p {
     font-size: 14px;
     line-height: 22px;
-  }
-  .about__text-wrap p br {
-    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -5187,6 +5172,30 @@ button,
 }
 .contacts__mail:disabled {
   opacity: 0.5;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@media (max-width: 767px) {
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff;
 }
 
 /* @mixin hover-focus {

@@ -177,9 +177,7 @@
                   <img src="img/banner/preview-2.png" alt="Человек в горах" srcset="img/banner/preview-2@2x.png 2x"
                     height="459" width="410" />
                 </picture>
-
               </div>
-
             </div>
           </li>
           <li class="banner__item swiper-slide">
@@ -224,8 +222,8 @@
 
             <div class="banner__video banner__video--altai">
               <div class="banner__video-img">
-                <iframe style="border:none;width:340px;height:220px;" width="340" height="220"
-                  src="https://music.yandex.ru/iframe/#track/112912322/25474374">
+                <iframe class="banner__video-iframe" style="border:none;width:340px;height:220px;" width="340"
+                  height="220" src="https://music.yandex.ru/iframe/#track/112912322/25474374">
                 </iframe>
               </div>
             </div>
@@ -592,7 +590,8 @@
                     Прокофьев</h4>
                   <a href="#"> <svg width="28" height="28">
                       <use xlink:href="img/sprite.svg#vk"></use>
-                    </svg></a>
+                    </svg>
+                  </a>
                 </div>
                 <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
               </li>
@@ -616,7 +615,8 @@
                     Афиногенова </h4>
                   <a href="#"> <svg width="28" height="28">
                       <use xlink:href="img/sprite.svg#vk"></use>
-                    </svg></a>
+                    </svg>
+                  </a>
                 </div>
                 <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе,
                   чувствовать&nbsp;&mdash; в
@@ -1083,10 +1083,8 @@
             <div class="swiper-slide gallery__slide">
               <div>
                 <picture>
-                  <!-- <source media="(max-width: 767px)" srcset="./img/gallery-view-mobile@2x.webp 2x, ./img/gallery-view-mobile.webp 1x" type="image/webp"> -->
                   <source media="(max-width: 767px)"
                     srcset="./img/photo/gallery-view-mobile@2x.jpg 2x, ./img/photo/gallery-view-mobile.jpg 1x">
-                  <!-- <source srcset="./img/gallery-view.webp 1x, ./img/gallery-view@2x.webp 2x" type="image/webp"> -->
                   <img src="./img/photo/gallery-view.jpg" srcset="./img/photo/gallery-view@2x.jpg 2x" alt="Горы">
                 </picture>
               </div>
@@ -1095,10 +1093,8 @@
             <div class="swiper-slide gallery__slide gallery__slide--double">
               <div>
                 <picture>
-                  <!-- <source media="(max-width: 767px)" srcset="./img/gallery-compass-mobile@2x.webp 2x, ./img/gallery-compass-mobile.webp 1x" type="image/webp"> -->
                   <source media="(max-width: 767px)"
                     srcset="./img/photo/gallery-compass-mobile@2x.jpg 2x, ./img/photo/gallery-compass-mobile.jpg 1x">
-                  <!-- <source srcset="./img/gallery-compass.webp 1x, ./img/gallery-compass@2x.webp 2x" type="image/webp"> -->
                   <img src="./img/photo/gallery-compass.jpg" srcset="./img/photo/gallery-compass@2x.jpg 2x" alt="Горы">
                 </picture>
               </div>
@@ -1106,10 +1102,8 @@
             <div class="swiper-slide gallery__slide">
               <div>
                 <picture>
-                  <!-- <source media="(max-width: 767px)" srcset="./img/gallery-way-mobile@2x.webp 2x, ./img/gallery-way-mobile.webp 1x" type="image/webp"> -->
                   <source media="(max-width: 767px)"
                     srcset="./img/photo/gallery-way-mobile@2x.jpg 2x, ./img/photo/gallery-way-mobile.jpg 1x">
-                  <!-- <source srcset="./img/gallery-way.webp 1x, ./img/gallery-way@2x.webp 2x" type="image/webp"> -->
                   <img src="./img/photo/gallery-way.jpg" srcset="./img/photo/gallery-way@2x.jpg 2x" alt="Путь">
                 </picture>
               </div>
@@ -1118,10 +1112,8 @@
             <div class="swiper-slide gallery__slide gallery__slide--double">
               <div>
                 <picture>
-                  <!-- <source media="(max-width: 767px)" srcset="./img/gallery-night-mobile@2x.webp 2x, ./img/gallery-night-mobile.webp 1x" type="image/webp"> -->
                   <source media="(max-width: 767px)"
                     srcset="./img/photo/gallery-night-mobile@2x.jpg 2x, ./img/photo/gallery-night-mobile.jpg 1x">
-                  <!-- <source srcset="./img/gallery-night.webp 1x, ./img/gallery-night@2x.webp 2x" type="image/webp"> -->
                   <img src="./img/photo/gallery-night.jpg" srcset="./img/photo/gallery-night@2x.jpg 2x" alt="Испытание">
                 </picture>
               </div>
@@ -1130,10 +1122,8 @@
             <div class="swiper-slide gallery__slide">
               <div>
                 <picture>
-                  <!-- <source media="(max-width: 767px)" srcset="./img/gallery-experience-mobile@2x.webp 2x, ./img/gallery-experience-mobile.webp 1x" type="image/webp"> -->
                   <source media="(max-width: 767px)"
                     srcset="./img/photo/gallery-experience-mobile@2x.jpg 2x, ./img/photo/gallery-compass-mobile.jpg 1x">
-                  <!-- <source srcset="./img/gallery-experience.webp 1x, ./img/gallery-experience@2x.webp 2x" type="image/webp"> -->
                   <img src="./img/photo/gallery-experience.jpg" srcset="./img/photo/gallery-experience@2x.jpg 2x"
                     alt="Опыт">
                 </picture>
@@ -1275,7 +1265,8 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#"><svg width="25" height="25">
+            <a href="#">
+              <svg width="25" height="25">
                 <use xlink:href="img/sprite.svg#ok"></use>
               </svg>
             </a>

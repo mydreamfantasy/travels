@@ -126,6 +126,12 @@
     padding: 0;
   }
 
+  @include vp-1199 {
+    br {
+      display: none;
+    }
+  }
+
   h3 {
     font-size: 21px;
     font-weight: 700;
@@ -152,10 +158,6 @@
     @include vp-1199 {
       font-size: 14px;
       line-height: 22px;
-
-      br {
-        display: none;
-      }
     }
 
     @include vp-767 {

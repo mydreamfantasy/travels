@@ -9,6 +9,7 @@ import {
   getSwiperGallery
 } from './modules/swiper';
 import {initVideo} from './modules/video';
+import {openMenu} from './modules/open-menu';
 
 // ---------------------------------
 
@@ -26,25 +27,12 @@ window.addEventListener('DOMContentLoaded', () => {
   getSwiperReviews();
   getSwiperFeatures();
   getSwiperGallery();
+  openMenu();
 
-  let navMain = document.querySelector('.header__nav');
-  let navToggle = document.querySelector('.header__nav__toggle');
 
-  navMain.classList.remove('header__nav--nojs');
-
-  navToggle.addEventListener('click', function () {
-    if (navMain.classList.contains('header__nav--closed')) {
-      navMain.classList.remove('header__nav--closed');
-      navMain.classList.add('header__nav--opened');
-    } else {
-      navMain.classList.add('header__nav--closed');
-      navMain.classList.remove('header__nav--opened');
-    }
-  });
-
+  /* eslint-disable no-undef */
   const map = L.map('map')
-      .on('load', () => {
-      })
+      .on('load', () => {})
       .setView(
           {
             lat: 55.774836,
