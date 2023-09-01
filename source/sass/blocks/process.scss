@@ -50,6 +50,14 @@
     overflow: hidden;
     background-color: $color-navi;
     opacity: 0.2;
+
+    @media (min-width: 2005px) {
+      left: -170px;
+    }
+
+    @media (min-width: 2605px) {
+      left: -27%;
+    }
   }
 
   @include vp-1199 {
@@ -102,7 +110,6 @@
   grid-template-columns: 25px 1fr;
   align-items: center;
   gap: 15px;
-  // width: 278px;
 
   span {
     margin: 0;

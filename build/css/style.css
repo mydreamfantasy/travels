@@ -2730,6 +2730,7 @@ button,
   height: 100%;
   max-width: 1600px;
   margin-bottom: 54px;
+  height: 100%;
 }
 @media (max-width: 767px) {
   .tours__list {
@@ -3349,7 +3350,9 @@ button,
 }
 .learning__item img {
   display: block;
+  width: 100%;
   margin-bottom: 17px;
+  aspect-ratio: auto 250/212;
 }
 @media (max-width: 1199px) {
   .learning__item img {
@@ -3503,6 +3506,16 @@ button,
   overflow: hidden;
   background-color: #0266c1;
   opacity: 0.2;
+}
+@media (min-width: 2005px) {
+  .process__list::after {
+    left: -170px;
+  }
+}
+@media (min-width: 2605px) {
+  .process__list::after {
+    left: -27%;
+  }
 }
 @media (max-width: 1199px) {
   .process__list {
@@ -3665,7 +3678,7 @@ button,
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .about__img {
-    background-image: url("../img/lake-table@2x.png");
+    background-image: url("../img/lake-tablet@2x.png");
   }
 }
 @media (max-width: 767px) {
@@ -3974,7 +3987,13 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__list {
-    margin: 0 0 0 -60px;
+    margin: 0 0 0 -18%;
+    padding-bottom: 82px;
+  }
+}
+@media (max-width: 1023px) {
+  .reviews__list {
+    margin: 0 0 0 -8%;
     padding-bottom: 82px;
   }
 }

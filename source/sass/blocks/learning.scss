@@ -234,7 +234,9 @@
 
   img {
     display: block;
+    width: 100%;
     margin-bottom: 17px;
+    aspect-ratio: auto 250 / 212;
 
     @include vp-1199 {
       width: 100%;
