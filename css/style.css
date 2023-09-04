@@ -2139,7 +2139,7 @@ button,
 .banner__video {
   position: absolute;
   top: 301px;
-  left: 58.2%;
+  right: 8.3%;
   width: 482px;
   height: 317px;
   z-index: 0;
@@ -2160,6 +2160,11 @@ button,
 .banner__video iframe {
   width: 442px;
   height: 300px;
+}
+
+.banner__video--altai iframe {
+  width: 340px;
+  height: 220px;
 }
 
 .banner__video-img {
@@ -4215,11 +4220,6 @@ button,
   .banner__video iframe {
     width: 442px;
     height: 300px;
-  }
-
-  .banner__video--altai iframe {
-    width: 340px;
-    height: 220px;
   }
 
   .banner__pagination {
