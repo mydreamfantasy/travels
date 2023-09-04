@@ -184,7 +184,7 @@
 .banner__video {
   position: absolute;
   top: 301px;
-  left: 58.2%;
+  right: 8.3%;
   width: 482px;
   height: 317px;
   z-index: 0;
@@ -251,11 +251,9 @@
 }
 
 .banner__video--altai {
-  @include vp-1199 {
-    iframe {
-      width: 340px;
-      height: 220px;
-    }
+  iframe {
+    width: 340px;
+    height: 220px;
   }
 }
 
