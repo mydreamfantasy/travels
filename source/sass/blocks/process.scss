@@ -80,8 +80,16 @@
     }
   }
 
+  @include vp-1399 {
+    gap: 10px;
+  }
+
+  @include vp-1199 {
+    gap: 140px 30px;
+  }
+
   @include vp-1023 {
-    gap: 92px 30px;
+    gap: 89px 30px;
   }
 
   @include vp-767 {

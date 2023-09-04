@@ -98,6 +98,10 @@
   flex-wrap: wrap;
   max-width: 600px;
 
+  @include vp-1399 {
+    margin-left: -6px;
+  }
+
   @include vp-1199 {
     margin-left: 0;
     gap: 20px;
@@ -155,6 +159,12 @@
     outline-offset: 5px;
   }
 
+  &:active {
+    &::after {
+      display: none;
+    }
+  }
+
   &:disabled {
     opacity: 0.5;
   }
@@ -177,31 +187,18 @@
     display: none;
   }
 
-  &:hover {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: -3px;
-      width: 110%;
-      height: 1px;
-      background-color: $color-shadow;
-    }
-  }
-
+  &:hover,
   &:focus-visible {
-    outline: 1px solid $color-shadow;
-    outline-offset: 5px;
+    outline: none;
+    color: $color-resolution;
   }
 
   &:active {
-    &::after {
-      display: none;
-    }
+    color: $color-navi;
   }
 
   &:disabled {
-    opacity: 0.5;
+    color: rgba(2, 102, 193, 0.1);
   }
 }
 

@@ -4,13 +4,13 @@
   position: relative;
   gap: 132px;
   margin-top: 80px;
-  padding-bottom: 104px;
+  padding-bottom: 102px;
 
   @include vp-1199 {
     flex-direction: column;
     margin-top: 77px;
     gap: 40px;
-    padding-bottom: 69px;
+    padding-bottom: 66px;
   }
 
   @include vp-767 {
@@ -191,31 +191,18 @@
     white-space: nowrap;
   }
 
-  &:hover {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: -3px;
-      width: 110%;
-      height: 1px;
-      background-color: $color-shadow;
-    }
-  }
-
+  &:hover,
   &:focus-visible {
-    outline: 1px solid $color-shadow;
-    outline-offset: 5px;
+    outline: none;
+    color: $color-resolution;
   }
 
   &:active {
-    &::after {
-      display: none;
-    }
+    color: $color-navi;
   }
 
   &:disabled {
-    opacity: 0.5;
+    color: rgba(2, 102, 193, 0.1);
   }
 }
 
@@ -232,30 +219,17 @@
     letter-spacing: -0.2px;
   }
 
-  &:hover {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: -3px;
-      width: 110%;
-      height: 1px;
-      background-color: $color-shadow;
-    }
-  }
-
+  &:hover,
   &:focus-visible {
-    outline: 1px solid $color-shadow;
-    outline-offset: 5px;
+    outline: none;
+    color: $color-resolution;
   }
 
   &:active {
-    &::after {
-      display: none;
-    }
+    color: $color-navi;
   }
 
   &:disabled {
-    opacity: 0.5;
+    color: rgba(2, 102, 193, 0.1);
   }
 }

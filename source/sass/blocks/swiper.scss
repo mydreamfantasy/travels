@@ -19,3 +19,16 @@
 .swiper-pagination-bullet-active {
   background: $color-default-white;
 }
+
+.swiper-autoheight .swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+  width: 100%;
+}
+
+.swiper-slide {
+  height: auto;
+}

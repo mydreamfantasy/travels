@@ -1,20 +1,34 @@
-import Swiper from '../vendor/swiper';
-const swiperContainer = document.querySelectorAll('[data-swiper]');
+import Swiper from "../vendor/swiper";
+const swiperContainer = document.querySelectorAll("[data-swiper]");
 
 export const getSwiper = () => {
   if (!swiperContainer) {
     return;
   } else {
-    const swiper = new Swiper('.banner', {
+    const swiper = new Swiper(".banner", {
+      loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true,
       },
     });
 
     swiper.init();
-    const duplicates = document.querySelectorAll('.swiper-slide-duplicate');
-    duplicates.forEach((el) => el.removeAttribute('tabindex'));
+    swiper.on("slideChange", function () {
+      let firstIframe = document.querySelector(".banner__video-player");
+      let secondIframe = document.querySelector(".banner__video-iframe");
+
+      const currentTime = new Date();
+      const hours = currentTime.getHours();
+      const minutes = currentTime.getMinutes();
+      const seconds = currentTime.getSeconds();
+
+      firstIframe.src = `${firstIframe.src}?${hours}:${minutes}:${seconds}`;
+      secondIframe.src = `${secondIframe.src}?${hours}:${minutes}:${seconds}`;
+    });
+
+    const duplicates = document.querySelectorAll(".swiper-slide-duplicate");
+    duplicates.forEach((el) => el.removeAttribute("tabindex"));
   }
 };
 
@@ -23,14 +37,13 @@ export const getSwiperTours = () => {
     return;
   } else {
     const swiper = new Swiper('[data-swiper="tours"]', {
-      direction: 'horizontal',
+      direction: "horizontal",
       watchOverflow: true,
       loop: false,
-      autoHeight: true,
 
       navigation: {
-        prevEl: '.tours__button--next',
-        nextEl: '.tours__button--prev',
+        prevEl: ".tours__button--next",
+        nextEl: ".tours__button--prev",
       },
 
       breakpoints: {
@@ -61,14 +74,13 @@ export const getSwiperLearn = () => {
     return;
   } else {
     const swiper = new Swiper('[data-swiper="learning"]', {
-      direction: 'horizontal',
+      direction: "horizontal",
       watchOverflow: true,
       loop: false,
-      autoHeight: true,
 
       navigation: {
-        prevEl: '.learning__button--next',
-        nextEl: '.learning__button--prev',
+        prevEl: ".learning__button--next",
+        nextEl: ".learning__button--prev",
       },
 
       breakpoints: {
@@ -99,15 +111,13 @@ export const getSwiperReviews = () => {
     return;
   } else {
     const swiper = new Swiper('[data-swiper="reviews"]', {
-      direction: 'horizontal',
+      direction: "horizontal",
       watchOverflow: true,
       loop: false,
-      autoHeight: true,
-      spaceBetween: 30,
 
       navigation: {
-        prevEl: '.reviews__button--next',
-        nextEl: '.reviews__button--prev',
+        prevEl: ".reviews__button--next",
+        nextEl: ".reviews__button--prev",
       },
 
       breakpoints: {
@@ -118,7 +128,7 @@ export const getSwiperReviews = () => {
         },
 
         768: {
-          slidesPerView: 'auto',
+          slidesPerView: "auto",
           centeredSlides: true,
           spaceBetween: 30,
         },
@@ -136,25 +146,22 @@ export const getSwiperFeatures = () => {
     const swiper = new Swiper('[data-swiper="features"]', {
       breakpoints: {
         1200: {
-          slidesPerView: 3,
+          slidesPerView: "auto",
           spaceBetween: 30,
-          initialSlide: 0.5,
-          direction: 'horizontal',
+          initialSlide: 0.6,
+          direction: "horizontal",
           watchOverflow: true,
           loop: true,
-          autoHeight: true,
 
           navigation: {
-            prevEl: '.features__button--next',
-            nextEl: '.features__button--prev',
+            prevEl: ".features__button--next",
+            nextEl: ".features__button--prev",
           },
         },
       },
     });
 
     swiper.init();
-    const duplicates = document.querySelectorAll('.swiper-slide-duplicate');
-    duplicates.forEach((el) => el.removeAttribute('tabindex'));
   }
 };
 
@@ -163,12 +170,11 @@ export const getSwiperGallery = () => {
     return;
   } else {
     const swiper = new Swiper('[data-swiper="gallery"]', {
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       spaceBetween: 5,
-      loop: true,
       navigation: {
-        nextEl: '.gallery__button--prev',
-        prevEl: '.gallery__button--next',
+        nextEl: ".gallery__button--prev",
+        prevEl: ".gallery__button--next",
       },
 
       breakpoints: {

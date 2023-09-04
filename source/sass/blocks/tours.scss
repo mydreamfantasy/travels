@@ -82,8 +82,12 @@
 
 .tours__item {
   position: relative;
-  padding: 205px 28px 21px 20px;
+  padding: 0 28px 21px 20px;
   color: $color-default-white;
+  aspect-ratio: 38 / 41;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 
   &:not(:first-of-type) {
     padding-right: 23px;
@@ -127,11 +131,12 @@
   }
 
   @include vp-1199 {
+    aspect-ratio: 323 / 410;
     padding-right: 23px;
   }
 
   @include vp-767 {
-    padding-top: 197px;
+    aspect-ratio: 290 / 412;
     padding-right: 19px;
   }
 }

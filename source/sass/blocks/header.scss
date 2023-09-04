@@ -1,7 +1,8 @@
 .header {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,21 +25,18 @@
       & .header__phone {
         color: $color-shadow;
 
-        &:hover {
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: -5px;
-            left: -3px;
-            width: 110%;
-            height: 1px;
-            background-color: $color-shadow;
-          }
+        &:hover,
+        &:focus-visible {
+          outline: none;
+          color: $color-resolution;
         }
 
-        &:focus-visible {
-          outline: 1px solid $color-shadow;
-          outline-offset: 5px;
+        &:active {
+          color: $color-navi;
+        }
+
+        &:disabled {
+          color: rgba(2, 102, 193, 0.1);
         }
       }
     }
@@ -56,21 +54,18 @@
       & .header__phone {
         color: $color-shadow;
 
-        &:hover {
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: -5px;
-            left: -3px;
-            width: 110%;
-            height: 1px;
-            background-color: $color-shadow;
-          }
+        &:hover,
+        &:focus-visible {
+          outline: none;
+          color: $color-resolution;
         }
 
-        &:focus-visible {
-          outline: 1px solid $color-shadow;
-          outline-offset: 5px;
+        &:active {
+          color: $color-navi;
+        }
+
+        &:disabled {
+          color: rgba(2, 102, 193, 0.1);
         }
       }
     }
@@ -204,6 +199,12 @@
     outline-offset: 5px;
   }
 
+  &:active {
+    &::after {
+      display: none;
+    }
+  }
+
   &:disabled {
     opacity: 0.5;
   }
@@ -247,25 +248,18 @@
     line-height: 14px;
   }
 
-  &:hover {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: -3px;
-      width: 110%;
-      height: 1px;
-      background-color: $color-default-white;
-    }
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    color: $color-resolution;
   }
 
-  &:focus-visible {
-    outline: 1px solid $color-default-white;
-    outline-offset: 5px;
+  &:active {
+    color: $color-navi;
   }
 
   &:disabled {
-    opacity: 0.5;
+    color: rgba(2, 102, 193, 0.1);
   }
 }
 
@@ -289,6 +283,11 @@
   @include vp-767 {
     top: 14px;
     left: 5px;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.8;
   }
 }
 
@@ -368,6 +367,10 @@
 }
 
 @include vp-1199 {
+  .header__nav-menu--opened {
+    overflow: hidden;
+  }
+
   .header__nav--closed .header__nav-item {
     display: none;
   }
@@ -388,6 +391,7 @@
     padding-left: 44px;
     padding-bottom: 70px;
     gap: 26px;
+    overflow: scroll;
   }
 
   .header__nav--opened .header__nav-item {
