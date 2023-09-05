@@ -15,35 +15,49 @@ export const getSwiper = () => {
 
     swiper.init();
     swiper.on("slideChange", function () {
-      let firstIframe = document.querySelector(".banner__video-player");
-      let secondIframe = document.querySelector(".banner__video-iframe");
-      let secondIframeParent = document.querySelector(".banner__video-img");
+      const videoContainer = document.querySelectorAll("#video");
+      const videoIframes = document.querySelectorAll(".banner__video-player");
 
-      // setTimeout(() => {
-      if (secondIframe === null) {
-        secondIframe = document.createElement("iframe");
+      videoIframes.length && videoIframes.forEach((el) => el.remove());
 
-        secondIframe.width = "340";
-        secondIframe.height = "220";
-        secondIframe.className = "banner__video-iframe";
-        secondIframe.setAttribute(
-          "src",
-          "https://music.yandex.ru/iframe/#track/112912322/25474374"
-        );
+      videoContainer.forEach((el) => {
+        const newVideoEl = document.createElement("div");
+        newVideoEl.setAttribute("class", "banner__video-player");
+        newVideoEl.setAttribute("id", "player");
+        newVideoEl.setAttribute("data-video-player", "");
 
-        secondIframeParent.append(secondIframe);
-      }
+        el.append(newVideoEl);
 
-      // }, 500);
-      secondIframe.remove();
+        el.classList.remove("banner__video-active");
+      });
+      // let secondIframe = document.querySelector(".banner__video-iframe");
+      // let secondIframeParent = document.querySelector(".banner__video-img");
 
-      const currentTime = new Date();
-      const hours = currentTime.getHours();
-      const minutes = currentTime.getMinutes();
-      const seconds = currentTime.getSeconds();
+      // // setTimeout(() => {
+      // if (secondIframe === null) {
+      //   secondIframe = document.createElement("iframe");
 
-      firstIframe.src = `${firstIframe.src}?${hours}:${minutes}:${seconds}`;
-      // secondIframe.src = `${secondIframe.src}?${hours}:${minutes}:${seconds}`;
+      //   secondIframe.width = "340";
+      //   secondIframe.height = "220";
+      //   secondIframe.className = "banner__video-iframe";
+      //   secondIframe.setAttribute(
+      //     "src",
+      //     "https://music.yandex.ru/iframe/#track/112912322/25474374"
+      //   );
+
+      //   secondIframeParent.append(secondIframe);
+      // }
+
+      // // }, 500);
+      // secondIframe.remove();
+
+      // const currentTime = new Date();
+      // const hours = currentTime.getHours();
+      // const minutes = currentTime.getMinutes();
+      // const seconds = currentTime.getSeconds();
+
+      // firstIframe.src = `${firstIframe.src}?${hours}:${minutes}:${seconds}`;
+      // // secondIframe.src = `${secondIframe.src}?${hours}:${minutes}:${seconds}`;
     });
 
     const duplicates = document.querySelectorAll(".swiper-slide-duplicate");

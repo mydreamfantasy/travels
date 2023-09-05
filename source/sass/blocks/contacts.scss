@@ -3,7 +3,7 @@
   justify-content: space-between;
   position: relative;
   gap: 132px;
-  margin-top: 80px;
+  margin-top: 83px;
   padding-bottom: 102px;
 
   @include vp-1199 {
@@ -138,7 +138,7 @@
   display: grid;
   gap: 6px;
 
-  h5 {
+  h3 {
     font-size: 18px;
     font-weight: 600;
     line-height: 18px;

@@ -151,6 +151,11 @@
   @include vp-767 {
     width: 158px;
   }
+
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .gallery__slide--double {
