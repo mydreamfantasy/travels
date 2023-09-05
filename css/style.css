@@ -3050,7 +3050,7 @@ button,
   margin-bottom: 10px;
 }
 
-.reviews__item h4 {
+.reviews__item h3 {
   margin: 0;
   padding: 0;
   font-size: 13px;
@@ -3241,7 +3241,7 @@ button,
   border: 1px solid #0266c1;
 }
 
-.features__item h4 {
+.features__item h3 {
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -3365,6 +3365,11 @@ button,
   height: auto;
 }
 
+.gallery__slide img {
+  display: block;
+  width: 100%;
+}
+
 .gallery__slide--double {
   width: 298px;
   height: auto;
@@ -3372,7 +3377,7 @@ button,
 
 .question {
   position: relative;
-  padding: 310px 0;
+  padding: 305px 0;
 }
 
 .question h3 {
@@ -3631,7 +3636,7 @@ button,
   justify-content: space-between;
   position: relative;
   gap: 132px;
-  margin-top: 80px;
+  margin-top: 83px;
   padding-bottom: 102px;
 }
 
@@ -3702,7 +3707,7 @@ button,
   gap: 6px;
 }
 
-.contacts__wrap h5 {
+.contacts__wrap h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
@@ -4465,7 +4470,7 @@ button,
     line-height: 18px;
   }
 
-  .reviews__item h4 {
+  .reviews__item h3 {
     font-size: 12px;
     font-weight: 700;
     line-height: normal;
@@ -4540,7 +4545,7 @@ button,
     height: 48px;
   }
 
-  .features__item h4 {
+  .features__item h3 {
     font-size: 16px;
     line-height: 16px;
   }
@@ -4573,7 +4578,7 @@ button,
   }
 
   .question {
-    padding: 195px 0;
+    padding: 191px 0;
   }
 
   .question h3 {
@@ -4703,7 +4708,7 @@ button,
     align-items: start;
   }
 
-  .contacts__wrap h5 {
+  .contacts__wrap h3 {
     font-size: 16px;
     line-height: 16px;
   }
@@ -5335,7 +5340,7 @@ button,
     height: 42px;
   }
 
-  .features__item h4 {
+  .features__item h3 {
     font-size: 14px;
     line-height: 14px;
   }
@@ -5450,7 +5455,7 @@ button,
     height: 22px;
   }
 
-  .contacts__wrap h5 {
+  .contacts__wrap h3 {
     font-size: 14px;
     line-height: 14px;
   }
