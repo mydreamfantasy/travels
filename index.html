@@ -16,7 +16,6 @@
   <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" />
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" />
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" />
-  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" />
   <link rel="preload" href="fonts/rouble.woff2" as="font" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -109,7 +108,7 @@
               </ul>
             </div>
 
-            <div class="banner__video" data-video>
+            <div class="banner__video" data-video id="video">
               <div class="banner__video-img">
                 <picture>
                   <source srcset="img/banner/preview-1.webp, img/banner/preview-1@2x.webp 2x" />
@@ -134,7 +133,7 @@
                 srcset="img/banner/banner-2-tablet.png, img/banner/banner-2-tablet@2x.png 2x" />
               <source srcset="img/banner/banner-2-phone.webp, img/banner/banner-2-phone@2x.webp 2x" />
               <img class="banner__img" src="img/banner/banner-2-phone.png" width="320" height="568" alt="Горный пейзаж"
-                srcset="img/banner/banner-2-phone@2x.png 2x" />
+                srcset="img/banner/banner-2-phone@2x.png 2x" loading="lazy" />
             </picture>
 
             <div class="banner__wrapper banner__wrapper--kamcha container">
@@ -175,7 +174,7 @@
                     srcset="img/banner/preview-2-tablet.webp, img/banner/preview-2-tablet@2x.webp 2x" />
                   <source srcset="img/banner/preview-2.webp, img/banner/preview-2@2x.webp 2x" />
                   <img src="img/banner/preview-2.png" alt="Человек в горах" srcset="img/banner/preview-2@2x.png 2x"
-                    height="459" width="410" />
+                    height="459" width="410" loading="lazy" />
                 </picture>
               </div>
             </div>
@@ -190,7 +189,7 @@
                 srcset="img/banner/banner-3-tablet.png, img/banner/banner-3-tablet@2x.png 2x" />
               <source srcset="img/banner/banner-3-phone.webp, img/banner/banner-3-phone@2x.webp 2x" />
               <img class="banner__img" src="img/banner/banner-3-phone.png" width="320" height="568" alt="Горный пейзаж"
-                srcset="img/banner/banner-3-phone@2x.png 2x" />
+                srcset="img/banner/banner-3-phone@2x.png 2x" loading="lazy" />
             </picture>
 
             <div class="banner__wrapper container">
@@ -264,7 +263,8 @@
                     srcset="img/tours-1-desktop.webp, img/tours-1-desktop@2x.webp 2x" />
                   <source media="(min-width: 768px)" srcset="img/tours-1-desktop.png, img/tours-1-desktop@2x.png 2x" />
                   <source srcset="img/tours-1.webp, img/tours-1@2x.webp 2x" />
-                  <img src="img/tours-1.png" alt="Горы" width="290" height="412" srcset="img/tours-1@2x.png 2x" />
+                  <img src="img/tours-1.png" alt="Горы" width="290" height="412" srcset="img/tours-1@2x.png 2x"
+                    loading="lazy" />
                 </picture>
                 <div class="tours__block">
                   <div class="tours__geo">
@@ -311,7 +311,8 @@
                     srcset="img/tours-2-desktop.webp, img/tours-2-desktop@2x.webp 2x" />
                   <source media="(min-width: 768px)" srcset="img/tours-2-desktop.png, img/tours-2-desktop@2x.png 2x" />
                   <source srcset="img/tours-2.webp, img/tours-2@2x.webp 2x" />
-                  <img src="img/tours-2.png" alt="Горы" width="290" height="412" srcset="img/tours-2@2x.png 2x" />
+                  <img src="img/tours-2.png" alt="Горы" width="290" height="412" srcset="img/tours-2@2x.png 2x"
+                    loading="lazy" />
                 </picture>
                 <div class="tours__block">
                   <div class="tours__geo">
@@ -357,7 +358,8 @@
                   <source media="(min-width: 768px)"
                     srcset="img/tours-3-desktop.webp, img/tours-3-desktop@2x.webp 2x" />
                   <source srcset="img/tours-3.webp, img/tours-3@2x.webp 2x" />
-                  <img src="img/tours-3.png" alt="Горы" width="290" height="412" srcset="img/tours-3@2x.png 2x" />
+                  <img src="img/tours-3.png" alt="Горы" width="290" height="412" srcset="img/tours-3@2x.png 2x"
+                    loading="lazy" />
                 </picture>
                 <div class="tours__block">
                   <div class="tours__geo">
@@ -402,7 +404,7 @@
                 <picture>
                   <source srcset="img/tours-1-desktop.webp, img/tours-1-desktop@2x.webp 2x" />
                   <img src="img/tours-1-desktop.png" alt="Горы" width="380" height="412"
-                    srcset="img/tours-1-desktop@2x.png 2x" />
+                    srcset="img/tours-1-desktop@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="tours__block">
                   <div class="tours__geo">
@@ -447,7 +449,7 @@
                 <picture>
                   <source srcset="img/tours-2-desktop.webp, img/tours-2-desktop@2x.webp 2x" />
                   <img src="img/tours-2-desktop.png" alt="Горы" width="380" height="412"
-                    srcset="img/tours-2-desktop@2x.png 2x" />
+                    srcset="img/tours-2-desktop@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="tours__block">
                   <div class="tours__geo">
@@ -492,7 +494,7 @@
                 <picture>
                   <source srcset="img/tours-3-desktop.webp, img/tours-3-desktop@2x.webp 2x" />
                   <img src="img/tours-3-desktop.png" alt="Горы" width="380" height="412"
-                    srcset="img/tours-3-desktop@2x.png 2x" />
+                    srcset="img/tours-3-desktop@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="tours__block">
                   <div class="tours__geo">
@@ -588,7 +590,7 @@
                     srcset="img/instructors/first-tablet.png, img/instructors/first-tablet@2x.png 2x" />
                   <source srcset="img/instructors/first-phone.webp, img/instructors/first-phone@2x.webp 2x" />
                   <img src="img/instructors/first-phone.png" alt="Инстуктор" width="250" height="212"
-                    srcset="img/instructors/first-phone@2x.png 2x" />
+                    srcset="img/instructors/first-phone@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="learning__wrapper">
                   <h4>Александр <br>
@@ -613,7 +615,7 @@
                     srcset="img/instructors/second-tablet.png, img/instructors/second-tablet@2x.png 2x" />
                   <source srcset="img/instructors/second-phone.webp, img/instructors/second-phone@2x.webp 2x" />
                   <img src="img/instructors/second-phone.png" alt="Инстуктор" width="250" height="212"
-                    srcset="img/instructors/second-phone@2x.png 2x" />
+                    srcset="img/instructors/second-phone@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="learning__wrapper">
                   <h4>
@@ -641,7 +643,7 @@
                     srcset="img/instructors/third-tablet.png, img/instructors/third-tablet@2x.png 2x" />
                   <source srcset="img/instructors/third-phone.webp, img/instructors/third-phone@2x.webp 2x" />
                   <img src="img/instructors/third-phone.png" alt="Инстуктор" width="250" height="212"
-                    srcset="img/instructors/third-phone@2x.png 2x" />
+                    srcset="img/instructors/third-phone@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="learning__wrapper">
                   <h4>
@@ -669,7 +671,7 @@
                     srcset="img/instructors/fourth-tablet.png, img/instructors/fourth-tablet@2x.png 2x" />
                   <source srcset="img/instructors/fourth-phone.webp, img/instructors/fourth-phone@2x.webp 2x" />
                   <img src="img/instructors/fourth-phone.png" alt="Инстуктор" width="250" height="212"
-                    srcset="img/instructors/fourth-phone@2x.png 2x" />
+                    srcset="img/instructors/fourth-phone@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="learning__wrapper">
                   <h4>
@@ -689,7 +691,7 @@
                 <picture>
                   <source srcset="img/instructors/first.webp, img/instructors/first@2x.webp 2x" />
                   <img src="img/instructors/first.png" alt="Инстуктор" width="250" height="212"
-                    srcset="img/instructors/first@2x.png 2x" />
+                    srcset="img/instructors/first@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="learning__wrapper">
                   <h4>Александр <br>
@@ -706,7 +708,7 @@
                 <picture>
                   <source srcset="img/instructors/second.webp, img/instructors/second@2x.webp 2x" />
                   <img src="img/instructors/second.png" alt="Инстуктор" width="250" height="212"
-                    srcset="img/instructors/second@2x.png 2x" />
+                    srcset="img/instructors/second@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="learning__wrapper">
                   <h4>
@@ -726,7 +728,7 @@
                 <picture>
                   <source srcset="img/instructors/third.webp, img/instructors/third@2x.webp 2x" />
                   <img src="img/instructors/third.png" alt="Инстуктор" width="250" height="212"
-                    srcset="img/instructors/third@2x.png 2x" />
+                    srcset="img/instructors/third@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="learning__wrapper">
                   <h4>
@@ -746,7 +748,7 @@
                 <picture>
                   <source srcset="img/instructors/fourth.webp, img/instructors/fourth@2x.webp 2x" />
                   <img src="img/instructors/fourth.png" alt="Инстуктор" width="250" height="212"
-                    srcset="img/instructors/fourth@2x.png 2x" />
+                    srcset="img/instructors/fourth@2x.png 2x" loading="lazy" />
                 </picture>
                 <div class="learning__wrapper">
                   <h4>
@@ -879,7 +881,7 @@
                     srcset="img/review/review-1-tablet.png, img/review/review-1-tablet@2x.png 2x" />
                   <source srcset="img/review/review-1-phone.webp, img/review/review-1-phone@2x.webp 2x" />
                   <img src="img/review/review-1-phone.png" alt="Инстуктор" width="250" height="169"
-                    srcset="img/review/review-1-phone@2x.png 2x" />
+                    srcset="img/review/review-1-phone@2x.png 2x" loading="lazy" />
                 </picture>
 
                 <div class="reviews__block">
@@ -915,7 +917,7 @@
                     srcset="img/review/review-2-tablet.png, img/review/review-2-tablet@2x.png 2x" />
                   <source srcset="img/review/review-2-phone.webp, img/review/review-2-phone@2x.webp 2x" />
                   <img src="img/review/review-2-phone.png" alt="Инстуктор" width="250" height="169"
-                    srcset="img/review/review-2-phone@2x.png 2x" />
+                    srcset="img/review/review-2-phone@2x.png 2x" loading="lazy" />
                 </picture>
 
                 <div class="reviews__block">
@@ -946,7 +948,7 @@
                     srcset="img/review/review-3-tablet.png, img/review/review-3-tablet@2x.png 2x" />
                   <source srcset="img/review/review-3-phone.webp, img/review/review-3-phone@2x.webp 2x" />
                   <img src="img/review/review-3-phone.png" alt="Инстуктор" width="250" height="169"
-                    srcset="img/review/review-3-phone@2x.png 2x" />
+                    srcset="img/review/review-3-phone@2x.png 2x" loading="lazy" />
                 </picture>
 
                 <div class="reviews__block">
@@ -979,7 +981,7 @@
                     srcset="img/review/review-4-tablet.png, img/review/review-4-tablet@2x.png 2x" />
                   <source srcset="img/review/review-4-phone.webp, img/review/review-4-phone@2x.webp 2x" />
                   <img src="img/review/review-4-phone.png" alt="Инстуктор" width="250" height="169"
-                    srcset="img/review/review-4-phone@2x.png 2x" />
+                    srcset="img/review/review-4-phone@2x.png 2x" loading="lazy" />
                 </picture>
 
                 <div class="reviews__block">
@@ -1141,7 +1143,7 @@
                     srcset="./img/photo/gallery-view-mobile@2x.jpg 2x, ./img/photo/gallery-view-mobile.jpg 1x">
                   <source srcset="./img/photo/gallery-view@2x.webp 2x, ./img/photo/gallery-view.webp 1x">
                   <img src="./img/photo/gallery-view.jpg" srcset="./img/photo/gallery-view@2x.jpg 2x" alt="Горы"
-                    width="159" height="265">
+                    width="159" height="265" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1155,7 +1157,7 @@
                     srcset="./img/photo/gallery-compass-mobile@2x.jpg 2x, ./img/photo/gallery-compass-mobile.jpg 1x">
                   <source srcset="./img/photo/gallery-compass@2x.webp 2x, ./img/photo/gallery-compass.webp 1x">
                   <img src="./img/photo/gallery-compass.jpg" srcset="./img/photo/gallery-compass@2x.jpg 2x" alt="Горы"
-                    width="159" height="265">
+                    width="159" height="265" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1169,7 +1171,7 @@
                     srcset="./img/photo/gallery-way-mobile@2x.jpg 2x, ./img/photo/gallery-way-mobile.jpg 1x">
                   <source srcset="./img/photo/gallery-way@2x.webp 2x, ./img/photo/gallery-way.webp 1x">
                   <img src="./img/photo/gallery-way.jpg" srcset="./img/photo/gallery-way@2x.jpg 2x" alt="Путь"
-                    width="159" height="265">
+                    width="159" height="265" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1183,7 +1185,7 @@
                     srcset="./img/photo/gallery-night-mobile@2x.jpg 2x, ./img/photo/gallery-night-mobile.jpg 1x">
                   <source srcset="./img/photo/gallery-night@2x.webp 2x, ./img/photo/gallery-night.webp 1x">
                   <img src="./img/photo/gallery-night.jpg" srcset="./img/photo/gallery-night@2x.jpg 2x" alt="Испытание"
-                    width="159" height="265">
+                    width="159" height="265" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1197,7 +1199,7 @@
                     srcset="./img/photo/gallery-experience-mobile@2x.jpg 2x, ./img/photo/gallery-compass-mobile.jpg 1x">
                   <source srcset="./img/photo/gallery-experience@2x.webp 2x, ./img/photo/gallery-compass.webp 1x">
                   <img src="./img/photo/gallery-experience.jpg" srcset="./img/photo/gallery-experience@2x.jpg 2x"
-                    alt="Опыт" width="159" height="265">
+                    alt="Опыт" width="159" height="265" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1210,7 +1212,7 @@
                     srcset="./img/photo/gallery-view-mobile@2x.jpg 2x, ./img/photo/gallery-view-mobile.jpg 1x">
                   <source srcset="./img/photo/gallery-view@2x.webp 2x, ./img/photo/gallery-view.webp 1x">
                   <img src="./img/photo/gallery-view.jpg" srcset="./img/photo/gallery-view@2x.jpg 2x" alt="Горы"
-                    width="159" height="265">
+                    width="159" height="265" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1224,7 +1226,7 @@
                     srcset="./img/photo/gallery-compass-mobile@2x.jpg 2x, ./img/photo/gallery-compass-mobile.jpg 1x">
                   <source srcset="./img/photo/gallery-compass@2x.webp 2x, ./img/photo/gallery-compass.webp 1x">
                   <img src="./img/photo/gallery-compass.jpg" srcset="./img/photo/gallery-compass@2x.jpg 2x" alt="Горы"
-                    width="159" height="265">
+                    width="159" height="265" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1237,7 +1239,7 @@
                     srcset="./img/photo/gallery-way-mobile@2x.jpg 2x, ./img/photo/gallery-way-mobile.jpg 1x">
                   <source srcset="./img/photo/gallery-way@2x.webp 2x, ./img/photo/gallery-way.webp 1x">
                   <img src="./img/photo/gallery-way.jpg" srcset="./img/photo/gallery-way@2x.jpg 2x" alt="Путь"
-                    width="159" height="265">
+                    width="159" height="265" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1251,7 +1253,7 @@
                     srcset="./img/photo/gallery-night-mobile@2x.jpg 2x, ./img/photo/gallery-night-mobile.jpg 1x">
                   <source srcset="./img/photo/gallery-night@2x.webp 2x, ./img/photo/gallery-night.webp 1x">
                   <img src="./img/photo/gallery-night.jpg" srcset="./img/photo/gallery-night@2x.jpg 2x" alt="Испытание"
-                    width="159" height="265">
+                    width="159" height="265" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1265,7 +1267,7 @@
                     srcset="./img/photo/gallery-experience-mobile@2x.jpg 2x, ./img/photo/gallery-experience-mobile.jpg 1x">
                   <source srcset="./img/photo/gallery-experience@2x.webp 2x, ./img/photo/gallery-experience.webp 1x">
                   <img src="./img/photo/gallery-experience.jpg" srcset="./img/photo/gallery-experience@2x.jpg 2x"
-                    alt="Опыт" width="159" height="265">
+                    alt="Опыт" width="159" height="265" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1280,7 +1282,7 @@
           <source media="(min-width: 768px)" srcset="img/feedback-bg-tablet.png, img/feedback-bg-tablet@2x.png 2x" />
           <source srcset="img/feedback-bg-mobile.webp, img/feedback-bg-mobile@2x.webp 2x" />
           <img class="question__img" src="img/feedback-bg-mobile.png" width="320" height="621" alt="Горный пейзаж"
-            srcset="img/feedback-bg-mobile@2x.png 2x" />
+            srcset="img/feedback-bg-mobile@2x.png 2x" loading="lazy" />
         </picture>
         <h3>Остались вопросы?</h3>
         <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
@@ -1431,8 +1433,8 @@
     </footer>
   </div>
 
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/vendor.min.js" type="module"></script>
+  <script src="js/main.min.js" type="module"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
