@@ -1,19 +1,19 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from "./utils/ios-vh-fix";
+import { Form } from "./modules/form-validate/form";
 import {
   getSwiper,
   getSwiperTours,
   getSwiperLearn,
   getSwiperReviews,
   getSwiperFeatures,
-  getSwiperGallery
-} from './modules/swiper';
-import {initVideo} from './modules/video';
-import {openMenu} from './modules/open-menu';
+  getSwiperGallery,
+} from "./modules/swiper";
+import { initVideo } from "./modules/video";
+import { openMenu } from "./modules/open-menu";
 
 // ---------------------------------
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", () => {
   // Utils
   // ---------------------------------
   initVideo();
@@ -29,55 +29,54 @@ window.addEventListener('DOMContentLoaded', () => {
   getSwiperGallery();
   openMenu();
 
-
   /* eslint-disable no-undef */
-  const map = L.map('map')
-      .on('load', () => {})
-      .setView(
-          {
-            lat: 55.774836,
-            lng: 37.632664,
-          },
-          17
-      );
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>',
-  }).addTo(map);
-
-  const mainPinIcon = L.icon({
-    iconUrl: './img/pin.svg',
-    iconSize: [38, 50],
-    iconAnchor: [5, 25],
-  });
-
-  const mainPinMarker = L.marker(
-      {
-        lat: 55.774836,
-        lng: 37.632664,
-      },
-      {
-        icon: mainPinIcon,
-      }
-  );
-
-  mainPinMarker.addTo(map);
-
-  mainPinMarker.on('moveend', (evt) => {
-    evt.target.getLatLng();
-  });
-
-  map.setView(
+  const map = L.map("map")
+    .on("load", () => {})
+    .setView(
       {
         lat: 55.774836,
         lng: 37.632664,
       },
       17
+    );
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>',
+  }).addTo(map);
+
+  const mainPinIcon = L.icon({
+    iconUrl: "./img/pin.svg",
+    iconSize: [38, 50],
+    iconAnchor: [5, 25],
+  });
+
+  const mainPinMarker = L.marker(
+    {
+      lat: 55.774836,
+      lng: 37.632664,
+    },
+    {
+      icon: mainPinIcon,
+    }
+  );
+
+  mainPinMarker.addTo(map);
+
+  mainPinMarker.on("moveend", (evt) => {
+    evt.target.getLatLng();
+  });
+
+  map.setView(
+    {
+      lat: 55.774836,
+      lng: 37.632664,
+    },
+    17
   );
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     const form = new Form();
     window.form = form;
     form.init();
