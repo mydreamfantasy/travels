@@ -1,6 +1,7 @@
 let navMain = document.querySelector(".header__nav");
 let navToggle = document.querySelector(".header__nav__toggle");
-let header = document.querySelector(".header__nav-list");
+let body = document.querySelector("body");
+let links = document.querySelectorAll(".header__nav-link");
 
 export const openMenu = () => {
   navMain.classList.remove("header__nav--nojs");
@@ -9,22 +10,28 @@ export const openMenu = () => {
     if (navMain.classList.contains("header__nav--closed")) {
       navMain.classList.remove("header__nav--closed");
       navMain.classList.add("header__nav--opened");
+      body.classList.add("header__nav-menu--opened");
     } else {
-      header.addEventListener("click", function () {
-        if (navMain.classList.contains("header__nav--opened")) {
-          navMain.classList.add("header__nav--closed");
-          navMain.classList.remove("header__nav--opened");
-        }
-      });
       navMain.classList.add("header__nav--closed");
       navMain.classList.remove("header__nav--opened");
+      body.classList.remove("header__nav-menu--opened");
 
-      header.removeEventListener("click", function () {
-        if (navMain.classList.contains("header__nav--opened")) {
+      links.forEach((i) => {
+        i.addEventListener("click", () => {
           navMain.classList.add("header__nav--closed");
           navMain.classList.remove("header__nav--opened");
-        }
+          body.classList.remove("header__nav-menu--opened");
+        });
       });
     }
+
+    document.addEventListener("click", (e) => {
+      const withinBoundaries = e.composedPath().includes(navMain);
+      if (!withinBoundaries) {
+        navMain.classList.add("header__nav--closed");
+        navMain.classList.remove("header__nav--opened");
+        body.classList.remove("header__nav-menu--opened");
+      }
+    });
   });
 };

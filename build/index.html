@@ -40,22 +40,22 @@
         </button>
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link" tabindex="0">Туры</a>
+            <a href="#tours" class="header__nav-link" tabindex="0">Туры</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link" tabindex="0">Обучение</a>
+            <a href="#learning" class="header__nav-link" tabindex="0">Обучение</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link" tabindex="0">О нас</a>
+            <a href="#about" class="header__nav-link" tabindex="0">О нас</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link" tabindex="0">Отзывы</a>
+            <a href="#reviews" class="header__nav-link" tabindex="0">Отзывы</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link" tabindex="0">Фотографии</a>
+            <a href="#gallery" class="header__nav-link" tabindex="0">Фотографии</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link" tabindex="0">Контакты</a>
+            <a href="#contacts" class="header__nav-link" tabindex="0">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -86,7 +86,8 @@
               <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход
                 на&nbsp;вершину
                 горы Чегет.</p>
-              <a href="#" class="banner__link btn" tabindex="-1"><span>Смотреть тур</span></a>
+              <a href="#" class="banner__link btn"><span>Смотреть тур</span></a>
+
               <ul class="banner__block">
                 <li class="banner__info">
                   <svg width="11" height="11" aria-hidden="true" focusable="false">
@@ -115,10 +116,11 @@
                   <img src="img/banner/preview-1.png" alt="Человек в горах" srcset="img/banner/preview-1@2x.png 2x"
                     height="482" width="317" />
                 </picture>
-                <a class="banner__video-btn" tabindex="-1" href="https://www.youtube.com/watch?v=9TZXsZItgdw"
-                  data-video-btn>
-                  <span class="visually-hidden">Воспроизвести видео.</span>
-                </a>
+                <div tabindex="0">
+                  <a class="banner__video-btn" href="https://www.youtube.com/watch?v=9TZXsZItgdw" data-video-btn>
+                    <span class="visually-hidden">Воспроизвести видео.</span>
+                  </a>
+                </div>
               </div>
               <div class="banner__video-player" id="player" data-video-player></div>
             </div>
@@ -141,7 +143,11 @@
               <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному
                 из&nbsp;самых нетронутых
                 уголков дикой природы в&nbsp;мире.</p>
-              <a href="#" class="banner__link btn" tabindex="-1"><span>Смотреть тур</span></a>
+              <div>
+                <a href="#" class="banner__link btn" tabindex="0"><span>Смотреть тур</span></a>
+              </div>
+
+
               <ul class="banner__block">
                 <li class="banner__info">
                   <svg width="11" height="11" aria-hidden="true" focusable="false">
@@ -197,7 +203,8 @@
               <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических
                 и&nbsp;захватывающих дух
                 ландшафтов Алтайских гор. </p>
-              <a href="#" class="banner__link btn" tabindex="-1"><span>Смотреть тур</span></a>
+              <a href="#" class="banner__link btn"><span>Смотреть тур</span></a>
+
               <ul class="banner__block">
                 <li class="banner__info">
                   <svg width="11" height="11" aria-hidden="true" focusable="false">
@@ -221,7 +228,7 @@
 
             <div class="banner__video banner__video--altai" id="audio">
               <div class="banner__video-img">
-                <iframe tabindex="-1" class="banner__video-iframe" width="340" height="220"
+                <iframe tabindex="0" class="banner__video-iframe" width="340" height="220"
                   src="https://music.yandex.ru/iframe/#track/112912322/25474374">
                 </iframe>
               </div>
@@ -231,28 +238,27 @@
         <div class="banner__pagination swiper-pagination"></div>
       </section>
       <div class="main__first-banner">
-        <section class="tours container">
+        <section class="tours container" id="tours">
           <div class="tours__title-block">
             <h2>
               Ближайшие туры
             </h2>
             <p>Ближайшие туры</p>
-          </div>
+            <div class="tours__slider-buttons">
+              <button class="tours__button tours__button--next swiper-button-next" type="button"
+                aria-label="Следующий слайд." data-swiper-button="tours-next">
+                <svg width="13" height="5" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
+                </svg>
+              </button>
 
-          <div class="tours__slider-buttons">
-            <button class="tours__button tours__button--next swiper-button-next" type="button"
-              aria-label="Следующий слайд." data-swiper-button="tours-next">
-              <svg width="13" height="5" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
-              </svg>
-            </button>
-
-            <button class="tours__button tours__button--prev swiper-button-prev" type="button"
-              aria-label="Предыдущий слайд." data-swiper-button="tours-prev">
-              <svg width="13" height="5" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
-              </svg>
-            </button>
+              <button class="tours__button tours__button--prev swiper-button-prev" type="button"
+                aria-label="Предыдущий слайд." data-swiper-button="tours-prev">
+                <svg width="13" height="5" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
 
           <div class="tours__slider swiper" data-swiper="tours">
@@ -545,7 +551,7 @@
           </a>
         </section>
 
-        <section class="learning">
+        <section class="learning" id="learning">
           <div class="learning__block-title container">
             <h2>
               Обучение
@@ -808,7 +814,7 @@
           </ul>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
           <div class="about__img">
           </div>
 
@@ -844,7 +850,7 @@
       </div>
 
       <div class="main__third-banner">
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="reviews__title-block container">
             <h2>
               Отзывы
@@ -1006,7 +1012,7 @@
           </div>
         </section>
 
-        <section class="features">
+        <section class="features" id="features">
           <div class="features__title-block">
             <h2>
               Преимущества
@@ -1103,34 +1109,37 @@
           </div>
         </section>
       </div>
-      <section class="gallery">
-        <div class="gallery__title-block container">
-          <h2>
-            Фотогалерея
-          </h2>
-          <span>Фотогалерея</span>
+      <section class="gallery" id="gallery">
+        <div>
+          <div class="gallery__title-block container">
+            <h2>
+              Фотогалерея
+            </h2>
+            <span>Фотогалерея</span>
+          </div>
+
+          <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте
+            нас на&nbsp;фото.
+            Лучшие фотографии украсят этот раздел нашего сайта.
+          </p>
+
+          <div class="gallery__slider-buttons">
+            <button class="gallery__button gallery__button--next swiper-button-next" type="button"
+              aria-label="Следующий слайд." data-swiper-button="tlearning-next">
+              <svg width="13" height="5" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
+
+            <button class="gallery__button gallery__button--prev swiper-button-prev" type="button"
+              aria-label="Предыдущий слайд." data-swiper-button="learning-prev">
+              <svg width="13" height="5" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
 
-        <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте
-          нас на&nbsp;фото.
-          Лучшие фотографии украсят этот раздел нашего сайта.
-        </p>
-
-        <div class="gallery__slider-buttons">
-          <button class="gallery__button gallery__button--next swiper-button-next" type="button"
-            aria-label="Следующий слайд." data-swiper-button="tlearning-next">
-            <svg width="13" height="5" aria-hidden="true" focusable="false">
-              <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
-            </svg>
-          </button>
-
-          <button class="gallery__button gallery__button--prev swiper-button-prev" type="button"
-            aria-label="Предыдущий слайд." data-swiper-button="learning-prev">
-            <svg width="13" height="5" aria-hidden="true" focusable="false">
-              <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
-            </svg>
-          </button>
-        </div>
 
         <div class="gallery__slider swiper" data-swiper="gallery">
           <div class="swiper-wrapper">
@@ -1310,7 +1319,7 @@
           </form>
         </div>
       </section>
-      <section class="contacts container">
+      <section class="contacts container" id="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__title-block">
             <h2>
@@ -1379,22 +1388,22 @@
           <nav class="footer__nav">
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Туры</a>
+                <a href="#tours" class="footer__nav-link">Туры</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Обучение</a>
+                <a href="#learning" class="footer__nav-link">Обучение</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">О нас</a>
+                <a href="#about" class="footer__nav-link">О нас</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Отзывы</a>
+                <a href="#reviews" class="footer__nav-link">Отзывы</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Фотографии</a>
+                <a href="#gallery" class="footer__nav-link">Фотографии</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Контакты</a>
+                <a href="#contacts" class="footer__nav-link">Контакты</a>
               </li>
             </ul>
           </nav>

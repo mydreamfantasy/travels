@@ -371,18 +371,18 @@
 
 .tours__slider-buttons {
   position: absolute;
-  right: 10%;
-  top: 21%;
+  right: 2%;
+  top: 25%;
   z-index: 1;
 
   @include vp-1199 {
-    right: 9%;
-    top: 16.5%;
+    right: 2.5%;
+    top: 20.5%;
   }
 
   @include vp-767 {
-    right: 12%;
-    top: 15%;
+    right: 8%;
+    top: 31%;
   }
 }
 
