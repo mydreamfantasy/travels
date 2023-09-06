@@ -18,7 +18,8 @@ export const getSwiper = () => {
       const videoContainer = document.querySelectorAll("#video");
       const videoIframes = document.querySelectorAll(".banner__video-player");
 
-      videoIframes.length && videoIframes.forEach((el) => el.remove());
+      const audioContainer = document.querySelectorAll("#audio");
+      const audioIframes = document.querySelectorAll(".banner__video-iframe");
 
       videoContainer.forEach((el) => {
         const newVideoEl = document.createElement("div");
@@ -27,9 +28,29 @@ export const getSwiper = () => {
         newVideoEl.setAttribute("data-video-player", "");
 
         el.append(newVideoEl);
-
-        el.classList.remove("banner__video-active");
+        el.classList.remove("banner__video--active");
       });
+
+      videoIframes.length && videoIframes.forEach((el) => el.remove());
+
+      audioContainer.forEach((el) => {
+        const newAudioEl = document.createElement("iframe");
+        newAudioEl.setAttribute("class", "banner__video-iframe");
+
+        newAudioEl.setAttribute(
+          "src",
+          "https://music.yandex.ru/iframe/#track/112912322/25474374"
+        );
+        newAudioEl.width = "340";
+        newAudioEl.height = "220";
+        newAudioEl.setAttribute("tabindex", "-1");
+
+        el.append(newAudioEl);
+
+        // el.classList.remove("banner__video-active");
+      });
+
+      audioIframes.length && audioIframes.forEach((el) => el.remove());
       // let secondIframe = document.querySelector(".banner__video-iframe");
       // let secondIframeParent = document.querySelector(".banner__video-img");
 
