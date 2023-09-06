@@ -1843,7 +1843,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 31px;
+  gap: 33px;
   list-style-type: none;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2462,8 +2462,8 @@ button,
 
 .tours__slider-buttons {
   position: absolute;
-  right: 10%;
-  top: 21%;
+  right: 2%;
+  top: 25%;
   z-index: 1;
 }
 
@@ -2786,7 +2786,7 @@ button,
   width: 100vw;
   height: 1px;
   top: 81px;
-  left: -10%;
+  right: -120px;
   overflow: hidden;
   background-color: #0266c1;
   opacity: 0.2;
@@ -3254,7 +3254,7 @@ button,
 
 .gallery {
   position: relative;
-  margin-top: 48px;
+  margin-top: 46px;
 }
 
 .gallery p {
@@ -3263,7 +3263,6 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: -0.3px;
 }
 
 .gallery__title-block {
@@ -3354,7 +3353,6 @@ button,
 
 .gallery__slide {
   width: 275px;
-  height: auto;
 }
 
 .gallery__slide img {
@@ -3369,7 +3367,7 @@ button,
 
 .question {
   position: relative;
-  padding: 305px 0;
+  padding: 309px 0;
 }
 
 .question h3 {
@@ -3628,7 +3626,7 @@ button,
   justify-content: space-between;
   position: relative;
   gap: 132px;
-  margin-top: 83px;
+  margin-top: 78px;
   padding-bottom: 102px;
 }
 
@@ -3640,7 +3638,6 @@ button,
   font-weight: 400;
   line-height: 24px;
   padding-bottom: 50px;
-  letter-spacing: -0.3px;
   max-width: 484px;
 }
 
@@ -4272,8 +4269,8 @@ button,
   }
 
   .tours__slider-buttons {
-    right: 9%;
-    top: 16.5%;
+    right: 2.5%;
+    top: 20.5%;
   }
 
   .learning {
@@ -4520,7 +4517,7 @@ button,
 
   .features__item {
     max-width: 324px;
-    padding: 30px 21px;
+    padding: 30px 25px;
   }
 
   .features__item .features__wrap {
@@ -4567,6 +4564,10 @@ button,
   .gallery__slider-buttons {
     right: 9%;
     top: 14%;
+  }
+
+  .gallery__slide {
+    max-height: 449px;
   }
 
   .question {
@@ -5062,13 +5063,13 @@ button,
   }
 
   .tours__slider-buttons {
-    right: 12%;
-    top: 15%;
+    right: 8%;
+    top: 31%;
   }
 
   .learning {
     padding-top: 65px;
-    padding-bottom: 5px;
+    padding-bottom: 13px;
   }
 
   .learning p {
@@ -5109,6 +5110,7 @@ button,
 
   .learning__list {
     padding-top: 0;
+    padding-bottom: 35px;
   }
 
   .learning__item {
@@ -5200,7 +5202,7 @@ button,
   .about__wrapper {
     width: 100%;
     padding-top: 287px;
-    padding-right: 8px;
+    padding-right: 19px;
   }
 
   .about__title-block h2 {
@@ -5300,7 +5302,7 @@ button,
   .features__title-block h2 {
     font-size: 22px;
     line-height: 22px;
-    padding-bottom: 28px;
+    padding-bottom: 32px;
   }
 
   .features__title-block p {
@@ -5319,7 +5321,7 @@ button,
 
   .features__item {
     max-width: 290px;
-    padding: 20px 11px;
+    padding: 20px 14px;
   }
 
   .features__item .features__wrap::after {
@@ -5365,6 +5367,7 @@ button,
 
   .gallery__slide {
     width: 158px;
+    max-height: 257px;
   }
 
   .gallery__slide--double {
