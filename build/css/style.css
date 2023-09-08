@@ -1595,9 +1595,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   gap: 31px;
   list-style-type: none;
   max-width: 600px;
@@ -1840,9 +1837,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   gap: 33px;
   list-style-type: none;
   -ms-flex-wrap: wrap;
@@ -2021,7 +2015,7 @@ button,
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 800px;
+  height: 100%;
   top: 0;
   left: 0;
   background-color: #2c39f2;
@@ -2295,6 +2289,7 @@ button,
   font-weight: 700;
   line-height: 28px;
   padding-right: 69px;
+  word-break: break-all;
 }
 
 .tours__item img {
@@ -2785,7 +2780,7 @@ button,
   position: absolute;
   width: 100vw;
   height: 1px;
-  top: 81px;
+  bottom: -68%;
   right: -120px;
   overflow: hidden;
   background-color: #0266c1;
@@ -2816,8 +2811,8 @@ button,
 .process__item::after {
   content: "";
   position: absolute;
-  top: 75px;
-  bottom: 0;
+  bottom: -80%;
+  left: 0;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -3122,7 +3117,7 @@ button,
 
 .features__slider-buttons {
   position: absolute;
-  bottom: 17%;
+  bottom: 98px;
   left: 51%;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
@@ -3291,7 +3286,7 @@ button,
 .gallery__slider-buttons {
   position: absolute;
   right: 10%;
-  top: 14.5%;
+  top: 13.5%;
   z-index: 1;
 }
 
@@ -4011,19 +4006,22 @@ button,
     left: 0;
     z-index: 1;
     width: 100vw;
+    display: block;
+    overflow: auto;
+    max-height: calc(100vh - 50px);
     background-color: #ffffff;
     color: #2d383f;
     padding-top: 39px;
     padding-left: 44px;
-    padding-bottom: 70px;
+    padding-bottom: 44px;
     gap: 26px;
-    overflow: scroll;
   }
 
   .header__nav--opened .header__nav-item {
     font-size: 16px;
     font-weight: 700;
     line-height: 16px;
+    margin-bottom: 26px;
     letter-spacing: 0.64px;
     text-transform: uppercase;
   }
@@ -4850,10 +4848,14 @@ button,
     padding-left: 14px;
     gap: 22px;
     padding-bottom: 50px;
+    display: block;
+    overflow: auto;
+    max-height: calc(100vh - 100px);
   }
 
   .header__nav--opened .header__nav-item {
     font-size: 14px;
+    margin-bottom: 22px;
     line-height: 14px;
     letter-spacing: 0.56px;
   }

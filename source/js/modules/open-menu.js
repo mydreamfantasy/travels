@@ -12,26 +12,26 @@ export const openMenu = () => {
       navMain.classList.add("header__nav--opened");
       body.classList.add("header__nav-menu--opened");
     } else {
-      navMain.classList.add("header__nav--closed");
-      navMain.classList.remove("header__nav--opened");
-      body.classList.remove("header__nav-menu--opened");
-
-      links.forEach((i) => {
-        i.addEventListener("click", () => {
+      document.addEventListener("click", (e) => {
+        const withinBoundaries = e.composedPath().includes(navMain);
+        if (!withinBoundaries) {
           navMain.classList.add("header__nav--closed");
           navMain.classList.remove("header__nav--opened");
           body.classList.remove("header__nav-menu--opened");
-        });
+        }
       });
+
+      navMain.classList.add("header__nav--closed");
+      navMain.classList.remove("header__nav--opened");
+      body.classList.remove("header__nav-menu--opened");
     }
 
-    document.addEventListener("click", (e) => {
-      const withinBoundaries = e.composedPath().includes(navMain);
-      if (!withinBoundaries) {
+    links.forEach((i) => {
+      i.addEventListener("click", () => {
         navMain.classList.add("header__nav--closed");
         navMain.classList.remove("header__nav--opened");
         body.classList.remove("header__nav-menu--opened");
-      }
+      });
     });
   });
 };

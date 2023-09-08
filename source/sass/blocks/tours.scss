@@ -104,6 +104,7 @@
     font-weight: 700;
     line-height: 28px;
     padding-right: 69px;
+    word-break: break-all;
 
     @include vp-1199 {
       padding-right: 78px;
