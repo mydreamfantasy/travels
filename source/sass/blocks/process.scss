@@ -45,8 +45,7 @@
     position: absolute;
     width: 100vw;
     height: 1px;
-    // top: 167%;
-    bottom: -68%;
+    bottom: -31px;
     right: -120px;
     overflow: hidden;
     background-color: $color-navi;
@@ -145,8 +144,7 @@
   &::after {
     content: "";
     position: absolute;
-    // top: 154%;
-    bottom: -80%;
+    bottom: -38px;
     left: 0;
     width: 14px;
     height: 14px;

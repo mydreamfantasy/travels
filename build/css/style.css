@@ -2289,7 +2289,6 @@ button,
   font-weight: 700;
   line-height: 28px;
   padding-right: 69px;
-  word-break: break-all;
 }
 
 .tours__item img {
@@ -2780,7 +2779,7 @@ button,
   position: absolute;
   width: 100vw;
   height: 1px;
-  bottom: -68%;
+  bottom: -31px;
   right: -120px;
   overflow: hidden;
   background-color: #0266c1;
@@ -2811,7 +2810,7 @@ button,
 .process__item::after {
   content: "";
   position: absolute;
-  bottom: -80%;
+  bottom: -38px;
   left: 0;
   width: 14px;
   height: 14px;
@@ -3848,6 +3847,11 @@ button,
     margin-left: -6px;
   }
 
+  .tours__item p {
+    padding-right: 10px;
+    word-break: break-word;
+  }
+
   .process__list {
     gap: 10px;
   }
@@ -4233,6 +4237,7 @@ button,
 
   .tours__item p {
     padding-right: 78px;
+    word-break: normal;
   }
 
   .tours__item {
@@ -4847,7 +4852,7 @@ button,
     padding-top: 28px;
     padding-left: 14px;
     gap: 22px;
-    padding-bottom: 50px;
+    padding-bottom: 22px;
     display: block;
     overflow: auto;
     max-height: calc(100vh - 100px);
