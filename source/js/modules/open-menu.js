@@ -1,7 +1,7 @@
-let navMain = document.querySelector(".header__nav");
-let navToggle = document.querySelector(".header__nav__toggle");
-let body = document.querySelector("body");
-let links = document.querySelectorAll(".header__nav-link");
+const navMain = document.querySelector(".header__nav");
+const navToggle = document.querySelector(".header__nav__toggle");
+const body = document.querySelector("body");
+const links = document.querySelectorAll(".header__nav-link");
 
 export const openMenu = () => {
   navMain.classList.remove("header__nav--nojs");
